@@ -1,5 +1,7 @@
 # Zephyr FPGA inference RTL
 
+**Recommended final version: Hybrid PE + sparse-v5, image ABI `0x00050003`, 32 PEs at 100 MHz.** Use `main` or tag `v1.0.0-hybrid-pe-final`. See [BEST_VERSION.md](BEST_VERSION.md) for the exact configuration, comparison and board evidence. Historical prototypes are retained for provenance; they are not the recommended production configuration. Older status/readme files can describe earlier development stages.
+
 Complete tracked RTL source snapshot from development commit `d842ca1399c41e59446306ca1445e7925e3cb69d` (`codex/hybrid-pe-deepfilter`). This includes the earlier sparse-v5 checkpoint and subsequent hybrid PE / DeepFilter integration.
 
 - `rtl/`: accelerator modules, historical baselines, testbenches, constraints and Vivado scripts.
