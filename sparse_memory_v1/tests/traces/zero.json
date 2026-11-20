@@ -1,0 +1,27 @@
+{
+  "format_version": 1,
+  "name": "zero",
+  "description": "All four SB0 GSU1 predecessor lists are present and empty.",
+  "records": [
+    {
+      "frame_id": 1,
+      "logical_id": 2,
+      "ordered_active_indices": []
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 4,
+      "ordered_active_indices": []
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 6,
+      "ordered_active_indices": []
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 8,
+      "ordered_active_indices": []
+    }
+  ]
+}

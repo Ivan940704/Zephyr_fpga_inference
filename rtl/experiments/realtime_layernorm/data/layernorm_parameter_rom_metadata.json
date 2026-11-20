@@ -1,0 +1,67 @@
+{
+  "numeric_contract": "signed_Q12_affine_and_values_reciprocal_Q20",
+  "parameter_entries": 362,
+  "parameter_init_sha256": "d72f40b4cbb85bae7f65d9690680beef1af05fa6e8405e290a364056f3af5e8f",
+  "parameter_vector_sha256": "bd305cd7357d48d5b7ecf24416566315048a76f226a6abd72b3939986a50412d",
+  "profiles": [
+    {
+      "bias_q12_max": 2623,
+      "bias_q12_min": -2099,
+      "length": 64,
+      "name": "fullband",
+      "offset": 0,
+      "output_reciprocal_q20": 17789402,
+      "output_scale": 0.058943857358196586,
+      "profile_id": 0,
+      "weight_q12_max": 8724,
+      "weight_q12_min": 4557
+    },
+    {
+      "bias_q12_max": 1683,
+      "bias_q12_min": -1135,
+      "length": 46,
+      "name": "subband_0",
+      "offset": 64,
+      "output_reciprocal_q20": 26354903,
+      "output_scale": 0.03978675181471457,
+      "profile_id": 1,
+      "weight_q12_max": 8425,
+      "weight_q12_min": 1799
+    },
+    {
+      "bias_q12_max": 2503,
+      "bias_q12_min": -1172,
+      "length": 94,
+      "name": "subband_1",
+      "offset": 110,
+      "output_reciprocal_q20": 33864296,
+      "output_scale": 0.030964057276568074,
+      "profile_id": 2,
+      "weight_q12_max": 9808,
+      "weight_q12_min": 2047
+    },
+    {
+      "bias_q12_max": 2219,
+      "bias_q12_min": -1848,
+      "length": 158,
+      "name": "subband_2",
+      "offset": 204,
+      "output_reciprocal_q20": 50437752,
+      "output_scale": 0.020789506867175966,
+      "profile_id": 3,
+      "weight_q12_max": 7937,
+      "weight_q12_min": 747
+    }
+  ],
+  "projection_dequant_entries": 255,
+  "projection_dequant_init_sha256": "8d109e3c9007dfd83f4f0f98637b5bf27bcd71a2956b4078a8eda616335ed239",
+  "projection_scale_float32": 0.03495301678776741,
+  "projection_scale_float64": 0.03495301599577656,
+  "schema": "zephyr.layernorm-parameter-rom-q12.v1",
+  "source_manifest": "upstream/parameters/manifest.json",
+  "source_manifest_sha256": "e5618b86bcbef4d1d7f10c6bc05ff2d3c58e459235893c8428802cb2f726df99",
+  "source_parameter_blob": "upstream/parameters/parameters.bin",
+  "source_parameter_blob_sha256": "572da396d01fbc20a9ed23f17fbbb0c29e3539fe9f7c3c9eb8c1c2c82f22f894",
+  "subband_source_entries": 782,
+  "subband_source_init_sha256": "8e7b2d951ad192f6498c8b7c7eff352c88d80c60cd57235624d7c749ff159e8c"
+}

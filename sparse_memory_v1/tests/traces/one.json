@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "name": "one",
+  "description": "Exactly one active source across the four SB0 contexts.",
+  "records": [
+    {
+      "frame_id": 1,
+      "logical_id": 2,
+      "ordered_active_indices": [
+        7
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 4,
+      "ordered_active_indices": []
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 6,
+      "ordered_active_indices": []
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 8,
+      "ordered_active_indices": []
+    }
+  ]
+}

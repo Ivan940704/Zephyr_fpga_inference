@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "name": "consecutive",
+  "description": "Overlapping context lists form one consecutive source run 4..10.",
+  "records": [
+    {
+      "frame_id": 1,
+      "logical_id": 2,
+      "ordered_active_indices": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 4,
+      "ordered_active_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 6,
+      "ordered_active_indices": [
+        8
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 8,
+      "ordered_active_indices": [
+        9,
+        10
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "name": "scattered",
+  "description": "Eight isolated sources exercise multiple canonical copy commands.",
+  "records": [
+    {
+      "frame_id": 1,
+      "logical_id": 2,
+      "ordered_active_indices": [
+        1,
+        9
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 4,
+      "ordered_active_indices": [
+        17,
+        33
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 6,
+      "ordered_active_indices": [
+        70,
+        170
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 8,
+      "ordered_active_indices": [
+        100,
+        223
+      ]
+    }
+  ]
+}

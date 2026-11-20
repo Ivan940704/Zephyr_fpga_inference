@@ -1,0 +1,43 @@
+{
+  "format_version": 1,
+  "name": "context_disjoint",
+  "description": "Four SB0 contexts have disjoint three-source runs.",
+  "records": [
+    {
+      "frame_id": 1,
+      "logical_id": 2,
+      "ordered_active_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 4,
+      "ordered_active_indices": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 6,
+      "ordered_active_indices": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "frame_id": 1,
+      "logical_id": 8,
+      "ordered_active_indices": [
+        30,
+        31,
+        32
+      ]
+    }
+  ]
+}

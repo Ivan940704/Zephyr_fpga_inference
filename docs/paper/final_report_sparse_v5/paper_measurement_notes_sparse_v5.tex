@@ -1,0 +1,44 @@
+% Author-editing measurement notes, not a complete manuscript section.
+% Rewrite for the final paper and retain the stated evidence boundaries.
+
+\paragraph{Implementation results.}
+The sparse-v5 accelerator was implemented on a PYNQ-Z1 (XC7Z020-1) with 32
+processing elements at 100~MHz.  The design uses a 64-bit AXI HP boundary and
+a 256-bit internal feed, and performs dynamic LayerNorm in programmable logic,
+including per-frame mean and population-variance evaluation followed by the
+learned elementwise scale and bias.  Post-route utilization was 42,773 LUTs,
+45,344 registers, 76 BRAM36 and 7 BRAM18 primitives (79.5 BRAM36 equivalents),
+and 68 DSP48E1 blocks.  Timing closed at 100~MHz with a WNS of +0.251~ns; after
+applying 0.25-ns setup and 0.05-ns hold guardbands, WNS and WHS were +0.001 and
++0.002~ns, respectively.
+
+\paragraph{Board latency and quality.}
+The primary experiment processed 100 utterances (426,196 frames and
+3,408.768~s of audio) using one persistent runtime, with software profiling,
+hardware profiling, and per-frame counter snapshots disabled.  Mean
+START-to-output and complete-iteration latencies were 5.3943 and 5.8076~ms per
+frame, respectively; their 99th-percentile values were 6.2897 and 6.7180~ms.
+The sustained board-loop RTF was 0.728054, while the setup-amortized board RTF
+was 0.732000.  The full serialized PYNQ script, which includes board-side file
+processing but excludes PC feature generation, achieved an RTF of 0.927193.
+Mean enhanced SI-SDR was 14.5120~dB, an improvement of 7.4313~dB over the noisy
+input.  All 100 enhanced outputs were bit-exact with the image-v5 reference.
+
+\paragraph{Sparse-memory effect.}
+Relative to image-v5, sparse-v5 reduced mean START-to-output latency by 19.09\%,
+mean complete-iteration latency by 17.93\%, and sustained board-loop RTF by
+17.89\%.  A separate five-file diagnostic run sampled counters once every 16
+frames and observed a 54.47\% reduction in parameter traffic and an 88.22\%
+MAC-skip ratio.  These sampled diagnostic statistics characterize the sparse
+memory path and are not part of the profiling-off 100-file latency
+distribution.
+
+\paragraph{Energy and scope.}
+Vivado's medium-confidence vectorless post-route estimate reported 1.609~W of
+total on-chip power (1.462~W dynamic and 0.147~W static).  Multiplying this
+estimate by the measured latency gives 8.679~mJ per START-to-output interval or
+9.344~mJ per complete frame iteration.  These are Zynq on-chip estimates, not
+physical board-rail measurements, and exclude external DDR, peripherals,
+regulator losses, and the host computer.  The maximum observed latency includes
+Linux/Python outliers; consequently, RTF below one demonstrates sustained
+throughput but not a hard per-frame deadline guarantee.

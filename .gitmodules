@@ -1,0 +1,5 @@
+[submodule "upstream"]
+	path = upstream
+	url = https://github.com/Ivan940704/allen_Zephyr.git
+	branch = fpga-inference
+

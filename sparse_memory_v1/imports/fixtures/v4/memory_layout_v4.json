@@ -1,0 +1,2683 @@
+{
+  "format_version": 4,
+  "generator_version": "zephyr-memory-v4.0",
+  "image_magic_ascii": "ZEPHYR4",
+  "image_header_bytes": 64,
+  "image_bytes": 1053056,
+  "image_sha256": "e4f1f5cd78007a47c8ecfc137f2f0e8117aa2af162bd7050913bf1867cf2cf34",
+  "source_manifest": "upstream/parameters/manifest.json",
+  "source_manifest_sha256": "eb79e506e0abf820dc79a3ca5d4f1f2312d0e94a47040f14fb47e88fcb87bf78",
+  "source_blob": "upstream/parameters/parameters.bin",
+  "source_blob_bytes": 2193288,
+  "source_blob_sha256": "572da396d01fbc20a9ed23f17fbbb0c29e3539fe9f7c3c9eb8c1c2c82f22f894",
+  "bus_bytes": 8,
+  "stage_alignment": 64,
+  "section_alignment": 64,
+  "lanes": 16,
+  "cache_bytes": 262144,
+  "maximum_stage_bytes": 219360,
+  "stage_count": 12,
+  "weight_physical_order": [
+    "operator",
+    "matrix",
+    "source_index",
+    "row_tile",
+    "lane"
+  ],
+  "global_sigmoid_lut": {
+    "alignment_bytes": 64,
+    "payload_bytes": 2040,
+    "transfer_bytes": 2040,
+    "table_count": 8,
+    "entries_per_table": 255,
+    "table_major": true,
+    "physical_order": [
+      "table_select",
+      "entry_index"
+    ],
+    "sha256": "af70843be21e720cedb6f627b02b69ef69a2519912c5bf900d9147f70b602c21",
+    "verified_values": 2040,
+    "frozen_pe_reference_summary": "rtl/pe_array/baseline/v1/reports/pe_sigmoid_lut_255/reference_summary.json",
+    "frozen_pe_reference_tables": "rtl/pe_array/baseline/v1/tb/vectors/pe_sigmoid_lut_255_tables.hex",
+    "frozen_pe_reference_tables_sha256": "0ed091b0b4e1beee8ce7a48efaf5cbea642b735c2f19590ff4c5652458e70f56",
+    "tables": [
+      {
+        "table_select": 0,
+        "operator": "fb_model.sequence_model.layers.0.cell",
+        "source_stage_id": 0,
+        "local_byte_offset": 0,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "2642b25d4ce6b8e712c37cf85b809d1277667ad2ac4a36d9afb3d2589366a2dd",
+        "dram_byte_offset": 64
+      },
+      {
+        "table_select": 1,
+        "operator": "fb_model.sequence_model.layers.1.cell",
+        "source_stage_id": 1,
+        "local_byte_offset": 255,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "b28cdd61312d3015de981bff10b4b6a1b7e1bfb677e28bd9292889b097ba2aa2",
+        "dram_byte_offset": 319
+      },
+      {
+        "table_select": 2,
+        "operator": "sb_model.sb_models.0.sequence_model.layers.0.cell",
+        "source_stage_id": 3,
+        "local_byte_offset": 510,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "2511187a1368410bc3379f9fc0dfbafca66c79819dda90c8b761855539126e6b",
+        "dram_byte_offset": 574
+      },
+      {
+        "table_select": 3,
+        "operator": "sb_model.sb_models.0.sequence_model.layers.1.cell",
+        "source_stage_id": 4,
+        "local_byte_offset": 765,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "63f7c47772ea88096238bf2dbe62d7d001502cd844934adeb3705125f303213d",
+        "dram_byte_offset": 829
+      },
+      {
+        "table_select": 4,
+        "operator": "sb_model.sb_models.1.sequence_model.layers.0.cell",
+        "source_stage_id": 6,
+        "local_byte_offset": 1020,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "1673fc09919138da6a888b48459f89c4f4c12180ae499a28271acf110e62dd83",
+        "dram_byte_offset": 1084
+      },
+      {
+        "table_select": 5,
+        "operator": "sb_model.sb_models.1.sequence_model.layers.1.cell",
+        "source_stage_id": 7,
+        "local_byte_offset": 1275,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "655476b7839434e947f3808022368e6d836ab31b36f1eb4e7c8f7b0bb50d9857",
+        "dram_byte_offset": 1339
+      },
+      {
+        "table_select": 6,
+        "operator": "sb_model.sb_models.2.sequence_model.layers.0.cell",
+        "source_stage_id": 9,
+        "local_byte_offset": 1530,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "e5c12663c564ebe06b62db70b6cb795d1ea8fea643127d955a098930b9513bff",
+        "dram_byte_offset": 1594
+      },
+      {
+        "table_select": 7,
+        "operator": "sb_model.sb_models.2.sequence_model.layers.1.cell",
+        "source_stage_id": 10,
+        "local_byte_offset": 1785,
+        "payload_bytes": 255,
+        "entries": 255,
+        "sha256": "8c6682a635b7197521ff0b973c9a95a7bc6fa8807ddb1a1de1e6a787721508d0",
+        "dram_byte_offset": 1849
+      }
+    ],
+    "dram_byte_offset": 64,
+    "dram_word_offset": 8
+  },
+  "parameter_abi": {
+    "gsu_response_bits": 5792,
+    "gsu_record_bytes": 728,
+    "projection_response_bits": 1120,
+    "projection_record_bytes": 144,
+    "lane_zero_is_lowest_bits": true,
+    "record_byte_order": "little-endian"
+  },
+  "canonical_generator_command": "python3 rtl/tools/generate_memory_v4.py --manifest upstream/parameters/manifest.json",
+  "stages": [
+    {
+      "id": 0,
+      "name": "fb_model.sequence_model.layers.0.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 137440,
+      "bram_words": 17180,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 64,
+          "output_rows": 320,
+          "row_tiles": 20,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 320,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 20480,
+          "verified_duplicate_values": 20480,
+          "padding_lanes": 0,
+          "packed_sha256": "455dc81d0c5c68cae89e79a14d07f5fd5a93ad6f4256e667f4d67bc55aadb140",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            640,
+            64
+          ],
+          "source_sha256": "ae0ed30bc1e50aca0a05b79b4d461b59b9c3287b1fc93f3edd28235f6ccb8ef6",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 20480
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 320,
+          "output_rows": 320,
+          "row_tiles": 20,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 320,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 102400,
+          "verified_duplicate_values": 102400,
+          "padding_lanes": 0,
+          "packed_sha256": "a913ccbaac4f523f4dc820e4dceb371ae9b7c86a65b30f98a2312c3a10dea00f",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            640,
+            320
+          ],
+          "source_sha256": "26f6ca069bbc0ff77b77f6ac650cbf3029a8e9385d52d5a9a165e5368acaa71d",
+          "local_byte_offset": 20480,
+          "local_word_offset": 2560,
+          "payload_bytes": 102400
+        }
+      ],
+      "parameters": {
+        "row_tiles": 20,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 5440,
+        "packed_sha256": "6c96e37752983c2fe74ea61bbbb533f7dd1db9d411d7759ad37e81848a616d29",
+        "local_byte_offset": 122880,
+        "local_word_offset": 15360,
+        "payload_bytes": 14560
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "2efd03cae9fd57ce5a36c4f1862bd2a85b952692744d997403866b8d36a3d78f",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 0,
+      "dram_byte_offset": 2112
+    },
+    {
+      "id": 1,
+      "name": "fb_model.sequence_model.layers.1.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 219360,
+      "bram_words": 27420,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 320,
+          "output_rows": 320,
+          "row_tiles": 20,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 320,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 102400,
+          "verified_duplicate_values": 102400,
+          "padding_lanes": 0,
+          "packed_sha256": "caf88083ae49b6ea2cf284f821eb137781631aabae2aef65e752bc916338786d",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            640,
+            320
+          ],
+          "source_sha256": "9a9331cb3db9df586c24e08b07c9db3910aa1ea4b1d8b0cc52d85965d2c29baf",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 102400
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 320,
+          "output_rows": 320,
+          "row_tiles": 20,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 320,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 102400,
+          "verified_duplicate_values": 102400,
+          "padding_lanes": 0,
+          "packed_sha256": "983d276a3739f928b9bfcf9602f7bbbbcfa31e27820667cfafebdc06ab445584",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            640,
+            320
+          ],
+          "source_sha256": "6657e3ed24480d72d934f4c4182fb85ec0b1ebe5eadd01ea2cbbb8df3c84ff07",
+          "local_byte_offset": 102400,
+          "local_word_offset": 12800,
+          "payload_bytes": 102400
+        }
+      ],
+      "parameters": {
+        "row_tiles": 20,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 5440,
+        "packed_sha256": "94e8eeb7660c0decae03986efaa66bfe61c9f73f6fd680b19dc603d18c921553",
+        "local_byte_offset": 204800,
+        "local_word_offset": 25600,
+        "payload_bytes": 14560
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "977c09adea7c0bc2837a6e826f05c9cc817b045aef1b67ce955b81bb575246db",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 1,
+      "dram_byte_offset": 139584
+    },
+    {
+      "id": 2,
+      "name": "fb_model.proj",
+      "class": "IntegerLinearReference",
+      "kind": "projection",
+      "kind_id": 1,
+      "transfer_bytes": 21056,
+      "bram_words": 2632,
+      "matrix_count": 1,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 320,
+          "output_rows": 64,
+          "row_tiles": 4,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 64,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": false,
+          "verified_source_values": 20480,
+          "verified_duplicate_values": 0,
+          "padding_lanes": 0,
+          "packed_sha256": "1d00b3276048ac047c1cfdd55c0acf12fbaecb4a943b01d92df32a1ebf553a00",
+          "id": 0,
+          "name": "weight_q",
+          "source_shape": [
+            64,
+            320
+          ],
+          "source_sha256": "3f8d8b56d21a6dae06bfe726c51a4a8f31518d03b868099f037a3a24a57ee58e",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 20480
+        }
+      ],
+      "parameters": {
+        "row_tiles": 4,
+        "lanes": 16,
+        "response_bits": 1120,
+        "response_bytes": 140,
+        "record_bytes": 144,
+        "record_words": 18,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "output_multiplier",
+            "source_tensor": "requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "output_shift",
+            "source_tensor": "requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "output_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "channel",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 192,
+        "packed_sha256": "c616f410ce8d16efe9728d7cd3ef886683b22611f614af0894dbc8e215dbd8b2",
+        "local_byte_offset": 20480,
+        "local_word_offset": 2560,
+        "payload_bytes": 576
+      },
+      "excluded_metadata_tensors": [
+        "input_scale",
+        "output_scale",
+        "weight_scale"
+      ],
+      "stage_sha256": "0b959c92f195346413578b506e6f57baa0c236e46e311f5e49ba1ed0d685d6a7",
+      "uses_sigmoid_table": false,
+      "sigmoid_table_select": null,
+      "dram_byte_offset": 358976
+    },
+    {
+      "id": 3,
+      "name": "sb_model.sb_models.0.sequence_model.layers.0.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 70672,
+      "bram_words": 8834,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 46,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 10304,
+          "verified_duplicate_values": 10304,
+          "padding_lanes": 0,
+          "packed_sha256": "52e0ce899de6b38b4153c5a62e031793aac7b68f2262399d24beefab9fc09b11",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            448,
+            46
+          ],
+          "source_sha256": "681cf3283c346d6156d3eb8f05ff52732ac6a9876a9c2a1fc91880c4518ee46f",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 10304
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "bf46b69c1bfc6fbb1ef94be6bb9700c4a090f22fe5a61dd2baedfbfd9473698f",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "f3936faa4693dc9a0dcb17ef1149e4b75172b8eee6b9d3f703ec68dd0a431844",
+          "local_byte_offset": 10304,
+          "local_word_offset": 1288,
+          "payload_bytes": 50176
+        }
+      ],
+      "parameters": {
+        "row_tiles": 14,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 3808,
+        "packed_sha256": "699c36e4581fb19c3bf77286e5f1f49a058ca935130b360585b46386a6852df1",
+        "local_byte_offset": 60480,
+        "local_word_offset": 7560,
+        "payload_bytes": 10192
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "538b23afcfed6bb4cd1e106634f332d5ef4a74159c06af56d11a6c298aa2236c",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 2,
+      "dram_byte_offset": 380032
+    },
+    {
+      "id": 4,
+      "name": "sb_model.sb_models.0.sequence_model.layers.1.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 110544,
+      "bram_words": 13818,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "cd1f3b924af288ac18089bcaf58f549a0962745786bbed64884a406f4f6a6511",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "872a903c9ea0fd64fb706659d4b929c27d490a2369c0e5fad1c92d5aea2984a3",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 50176
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "530349e36d420c826d3e6c643f8449bc6e01edb29d8be0717ce3af6041047c88",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "1e41e9c87f8361316016e15b0bded26bbc771380a35c54d35fb824c9c5d426b1",
+          "local_byte_offset": 50176,
+          "local_word_offset": 6272,
+          "payload_bytes": 50176
+        }
+      ],
+      "parameters": {
+        "row_tiles": 14,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 3808,
+        "packed_sha256": "491b1f34ab388663dddedb2d5b1e63841de65c70bec1b324c10ba3becbee88cd",
+        "local_byte_offset": 100352,
+        "local_word_offset": 12544,
+        "payload_bytes": 10192
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "cb026c2c1b769bb6ef20fe0763c9405ce3c9e88bf66cfce32eae569b4ebd5848",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 3,
+      "dram_byte_offset": 450752
+    },
+    {
+      "id": 5,
+      "name": "sb_model.sb_models.0.proj",
+      "class": "IntegerLinearReference",
+      "kind": "projection",
+      "kind_id": 1,
+      "transfer_bytes": 18640,
+      "bram_words": 2330,
+      "matrix_count": 1,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 80,
+          "row_tiles": 5,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 80,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": false,
+          "verified_source_values": 17920,
+          "verified_duplicate_values": 0,
+          "padding_lanes": 0,
+          "packed_sha256": "c1843d3e400ca49182dca3dfa1e38e2b95b85b12ad025f8ece49649ecd170583",
+          "id": 0,
+          "name": "weight_q",
+          "source_shape": [
+            80,
+            224
+          ],
+          "source_sha256": "80c72005a94e63caa6f223f9cdac9d19537b73a8176f67148f5c54c56ed74d9b",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 17920
+        }
+      ],
+      "parameters": {
+        "row_tiles": 5,
+        "lanes": 16,
+        "response_bits": 1120,
+        "response_bytes": 140,
+        "record_bytes": 144,
+        "record_words": 18,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "output_multiplier",
+            "source_tensor": "requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "output_shift",
+            "source_tensor": "requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "output_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "channel",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 240,
+        "packed_sha256": "9a77efc55683ba0be4abc21245da8352dd2178c047d136fa73364f2f5bbb14f5",
+        "local_byte_offset": 17920,
+        "local_word_offset": 2240,
+        "payload_bytes": 720
+      },
+      "excluded_metadata_tensors": [
+        "input_scale",
+        "output_scale",
+        "weight_scale"
+      ],
+      "stage_sha256": "3ee7b49fe483942a80931a9c7c2ef08c71812b5c0625002c5bf6da16af9d2a20",
+      "uses_sigmoid_table": false,
+      "sigmoid_table_select": null,
+      "dram_byte_offset": 561344
+    },
+    {
+      "id": 6,
+      "name": "sb_model.sb_models.1.sequence_model.layers.0.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 81424,
+      "bram_words": 10178,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 94,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 21056,
+          "verified_duplicate_values": 21056,
+          "padding_lanes": 0,
+          "packed_sha256": "5f890a91b76ae5d9dbebe9cf7660a41fd91732843e749dcd76465baf9adcd71f",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            448,
+            94
+          ],
+          "source_sha256": "7335200ad2c6069d3d1363f3e8613fddc13c8fc8a301bd5286503e7420b9a1ee",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 21056
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "a72a2d61bf4c18a5598097f0ff819921cded7458ae3b4e8b89e88b2bfd69be92",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "f6aab0fdac50df4dbaf7ff4a561e92d0a0fc5c4472a0c68f0120d312517d8000",
+          "local_byte_offset": 21056,
+          "local_word_offset": 2632,
+          "payload_bytes": 50176
+        }
+      ],
+      "parameters": {
+        "row_tiles": 14,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 3808,
+        "packed_sha256": "31d2aec28a0c2558de428c12626fa2e0036e5497c8b78ef118efe21fb23f9e05",
+        "local_byte_offset": 71232,
+        "local_word_offset": 8904,
+        "payload_bytes": 10192
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "38262986215328d28b493654c3b0322dc36b2ffc7b0ab06d36d3aefd2823ee82",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 4,
+      "dram_byte_offset": 580032
+    },
+    {
+      "id": 7,
+      "name": "sb_model.sb_models.1.sequence_model.layers.1.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 110544,
+      "bram_words": 13818,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "20d97806ab8fc827d36a08abb72b32776232c5cdb7a79f1c7f228b4d272b9bcb",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "8ef3c38fcaf6a42ce5010d69f203184c736dea19a3e64bc986c3cb48858d5927",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 50176
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "fe8490590b9b7a51ef6a233f7e53ccc8d477ca4ac61ec70d2b732e36e562f525",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "bbf6b20b1ad7c09911f5ea23781545e59039e06754adb7d5ef480badb83770f4",
+          "local_byte_offset": 50176,
+          "local_word_offset": 6272,
+          "payload_bytes": 50176
+        }
+      ],
+      "parameters": {
+        "row_tiles": 14,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 3808,
+        "packed_sha256": "93e6c035cedd18ee8614204c2c211eaf99cbcccaf62635ae3c4ef087882f8e6b",
+        "local_byte_offset": 100352,
+        "local_word_offset": 12544,
+        "payload_bytes": 10192
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "9f4d8d23ff0bde5d53d1129fee653fe24042816fc02d5ee80db03e9e1da7f139",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 5,
+      "dram_byte_offset": 661504
+    },
+    {
+      "id": 8,
+      "name": "sb_model.sb_models.1.proj",
+      "class": "IntegerLinearReference",
+      "kind": "projection",
+      "kind_id": 1,
+      "transfer_bytes": 44736,
+      "bram_words": 5592,
+      "matrix_count": 1,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 192,
+          "row_tiles": 12,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 192,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": false,
+          "verified_source_values": 43008,
+          "verified_duplicate_values": 0,
+          "padding_lanes": 0,
+          "packed_sha256": "8d8b5b7bb3c14a5d9419fd5853fbd258fe6837f205451c9f6c99482b4b3133a2",
+          "id": 0,
+          "name": "weight_q",
+          "source_shape": [
+            192,
+            224
+          ],
+          "source_sha256": "8d1ab042c3ada11936e267a727c27d19797fec25684a5869067c4b7454026638",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 43008
+        }
+      ],
+      "parameters": {
+        "row_tiles": 12,
+        "lanes": 16,
+        "response_bits": 1120,
+        "response_bytes": 140,
+        "record_bytes": 144,
+        "record_words": 18,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "output_multiplier",
+            "source_tensor": "requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "output_shift",
+            "source_tensor": "requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "output_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "channel",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 576,
+        "packed_sha256": "3f7a2acf9aabead1adeac0730dd6ead6cdd6e7ea8e7073a8825fae31e6bbc31b",
+        "local_byte_offset": 43008,
+        "local_word_offset": 5376,
+        "payload_bytes": 1728
+      },
+      "excluded_metadata_tensors": [
+        "input_scale",
+        "output_scale",
+        "weight_scale"
+      ],
+      "stage_sha256": "bafefa7943c78aef54e52aa50ca1b69061bd27140f62c7f31b34f52842070fe0",
+      "uses_sigmoid_table": false,
+      "sigmoid_table_select": null,
+      "dram_byte_offset": 772096
+    },
+    {
+      "id": 9,
+      "name": "sb_model.sb_models.2.sequence_model.layers.0.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 95760,
+      "bram_words": 11970,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 158,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 35392,
+          "verified_duplicate_values": 35392,
+          "padding_lanes": 0,
+          "packed_sha256": "da30a733d8ed0e84cb3ef2d32b25d09554e868e394207df0c46a011c9008a28c",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            448,
+            158
+          ],
+          "source_sha256": "4325fd3d1abe808a3fbdc532835099604cf16c9d5716c8ec97b922df4c3a981e",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 35392
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "aa899ac375b27deb8fbaee24f49a9c5bd962973dca2e5a188cd47933f7dc833d",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "92040d6741d4ae1d42d9ada28d961d411ee9de4566c1d792e25e27e19dcb7580",
+          "local_byte_offset": 35392,
+          "local_word_offset": 4424,
+          "payload_bytes": 50176
+        }
+      ],
+      "parameters": {
+        "row_tiles": 14,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 3808,
+        "packed_sha256": "52ee6f733873135a8f257adb35c5e9e1472080aeee41c9a8abbf9e70b0d683f7",
+        "local_byte_offset": 85568,
+        "local_word_offset": 10696,
+        "payload_bytes": 10192
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "5616716352223fa09644f187b7bf4747311a36645d8fe51ccb268ddea95fb4b5",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 6,
+      "dram_byte_offset": 816832
+    },
+    {
+      "id": 10,
+      "name": "sb_model.sb_models.2.sequence_model.layers.1.cell",
+      "class": "IntegerGSUCellReference",
+      "kind": "gsu",
+      "kind_id": 0,
+      "transfer_bytes": 110544,
+      "bram_words": 13818,
+      "matrix_count": 2,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "6b41f6f951986b230847dbb160780f3046b1991545797439bf3c76f358b86233",
+          "id": 0,
+          "name": "weight_ih_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "8d175335d41910323c12bc2ddd5bf19a235bb9a99d394eef442d7e382309b4a3",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 50176
+        },
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 224,
+          "row_tiles": 14,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 224,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": true,
+          "verified_source_values": 50176,
+          "verified_duplicate_values": 50176,
+          "padding_lanes": 0,
+          "packed_sha256": "10219727b95faa8a9eb7be3fa8f1d543b89029279d76a41faa475529feeb8d3b",
+          "id": 1,
+          "name": "weight_hh_q",
+          "source_shape": [
+            448,
+            224
+          ],
+          "source_sha256": "c38f373c821abb27cd960fd26e1b22261a900968a95622abedfd1c7623f89ed0",
+          "local_byte_offset": 50176,
+          "local_word_offset": 6272,
+          "payload_bytes": 50176
+        }
+      ],
+      "parameters": {
+        "row_tiles": 14,
+        "lanes": 16,
+        "response_bits": 5792,
+        "response_bytes": 724,
+        "record_bytes": 728,
+        "record_words": 91,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "forget_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "forget",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "forget_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "forget",
+            "lsb": 1120,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "forget_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "forget",
+            "lsb": 1216,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_multiplier",
+            "source_tensor": "input_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 1728,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_input_shift",
+            "source_tensor": "input_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2240,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_recurrent_multiplier",
+            "source_tensor": "recurrent_requantizer.multiplier",
+            "source_selector": "cell",
+            "lsb": 2336,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cell_recurrent_shift",
+            "source_tensor": "recurrent_requantizer.right_shift",
+            "source_selector": "cell",
+            "lsb": 2848,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cell_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "cell",
+            "lsb": 2944,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_multiplier",
+            "source_tensor": "cx_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 3456,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "previous_shift",
+            "source_tensor": "cx_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 3968,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "cellgate_multiplier",
+            "source_tensor": "cellgate_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4064,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "cellgate_shift",
+            "source_tensor": "cellgate_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 4576,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_multiplier",
+            "source_tensor": "bn_requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 4672,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "bn_shift",
+            "source_tensor": "bn_requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 5184,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "bn_bias_q",
+            "source_tensor": "bn_bias_q",
+            "source_selector": "channel",
+            "lsb": 5280,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 3808,
+        "packed_sha256": "e151390d1b3591ce3881bdcd3cf660cd5f3ef2b8f36d4986b53b2272901b0fcf",
+        "local_byte_offset": 100352,
+        "local_word_offset": 12544,
+        "payload_bytes": 10192
+      },
+      "excluded_metadata_tensors": [
+        "cellgate_scale",
+        "forget_pre_scale",
+        "gate_scale",
+        "input_scale",
+        "pre_state_scale",
+        "state_scale",
+        "weight_hh_scale",
+        "weight_ih_scale"
+      ],
+      "stage_sha256": "e9edc4d9370530ce219a44ae011d48ef4522a95daf3ed52e936581ac6b80221a",
+      "uses_sigmoid_table": true,
+      "sigmoid_table_select": 7,
+      "dram_byte_offset": 912640
+    },
+    {
+      "id": 11,
+      "name": "sb_model.sb_models.2.proj",
+      "class": "IntegerLinearReference",
+      "kind": "projection",
+      "kind_id": 1,
+      "transfer_bytes": 29824,
+      "bram_words": 3728,
+      "matrix_count": 1,
+      "matrices": [
+        {
+          "physical_order": [
+            "source_index",
+            "row_tile",
+            "lane"
+          ],
+          "source_count": 224,
+          "output_rows": 128,
+          "row_tiles": 8,
+          "lanes": 16,
+          "word_bytes": 16,
+          "source_stride_bytes": 128,
+          "row_tile_stride_bytes": 16,
+          "shared_gate_halves_verified": false,
+          "verified_source_values": 28672,
+          "verified_duplicate_values": 0,
+          "padding_lanes": 0,
+          "packed_sha256": "8dc63a83e555886f8138c65bc75e4b519bad88b2ec9ad3d662f619b43793c730",
+          "id": 0,
+          "name": "weight_q",
+          "source_shape": [
+            128,
+            224
+          ],
+          "source_sha256": "5848cd0e80fcf7ce98383b41e0bab3c93a8656a7be9d088b924fa0a7883d150b",
+          "local_byte_offset": 0,
+          "local_word_offset": 0,
+          "payload_bytes": 28672
+        }
+      ],
+      "parameters": {
+        "row_tiles": 8,
+        "lanes": 16,
+        "response_bits": 1120,
+        "response_bytes": 140,
+        "record_bytes": 144,
+        "record_words": 18,
+        "record_padding_bytes": 4,
+        "fields": [
+          {
+            "name": "output_multiplier",
+            "source_tensor": "requantizer.multiplier",
+            "source_selector": "channel",
+            "lsb": 0,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          },
+          {
+            "name": "output_shift",
+            "source_tensor": "requantizer.right_shift",
+            "source_selector": "channel",
+            "lsb": 512,
+            "lane_width": 6,
+            "lanes": 16,
+            "bits": 96,
+            "signed": false
+          },
+          {
+            "name": "output_bias_q",
+            "source_tensor": "bias_q",
+            "source_selector": "channel",
+            "lsb": 608,
+            "lane_width": 32,
+            "lanes": 16,
+            "bits": 512,
+            "signed": true
+          }
+        ],
+        "verified_values": 384,
+        "packed_sha256": "f75c707f982f7383ec72dcf424893ece16c8948c49b8111667ce85c31b458a25",
+        "local_byte_offset": 28672,
+        "local_word_offset": 3584,
+        "payload_bytes": 1152
+      },
+      "excluded_metadata_tensors": [
+        "input_scale",
+        "output_scale",
+        "weight_scale"
+      ],
+      "stage_sha256": "a9b03415d5f00ddd4732982c7da6b36abd5de7efa1eee5538f678851dbf5ad13",
+      "uses_sigmoid_table": false,
+      "sigmoid_table_select": null,
+      "dram_byte_offset": 1023232
+    }
+  ]
+}

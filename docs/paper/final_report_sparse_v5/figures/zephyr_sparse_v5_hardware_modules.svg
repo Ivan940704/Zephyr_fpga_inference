@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1320" viewBox="0 0 2200 1320" role="img" aria-labelledby="title description">
+  <title id="title">Zephyr sparse-v5 FPGA hardware module architecture</title>
+  <desc id="description">Simplified module-level connection diagram derived from the production accelerator_system_top, accelerator_top, sparse-memory subsystem, and PL LayerNorm RTL.</desc>
+  <defs>
+    <marker id="arrow-data" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#246BCE"/>
+    </marker>
+    <marker id="arrow-param" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#D66A1F"/>
+    </marker>
+    <marker id="arrow-control" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#667085"/>
+    </marker>
+    <marker id="arrow-state" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2D8A5B"/>
+    </marker>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#172B4D" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { font: 700 34px Inter, "Noto Sans", Arial, sans-serif; fill: #14233D; }
+      .subtitle { font: 400 18px Inter, "Noto Sans", Arial, sans-serif; fill: #53627A; }
+      .region-title { font: 700 22px Inter, "Noto Sans", Arial, sans-serif; fill: #1E3456; letter-spacing: 0.4px; }
+      .node-title { font: 700 18px Inter, "Noto Sans", Arial, sans-serif; fill: #14233D; text-anchor: middle; }
+      .node-sub { font: 400 14px Inter, "Noto Sans", Arial, sans-serif; fill: #53627A; text-anchor: middle; }
+      .rtl-name { font: 400 13px Consolas, "Courier New", monospace; fill: #42516A; text-anchor: middle; }
+      .edge-label { font: 600 14px Inter, "Noto Sans", Arial, sans-serif; fill: #263B5B; text-anchor: middle; }
+      .legend { font: 500 14px Inter, "Noto Sans", Arial, sans-serif; fill: #42516A; }
+      .data { fill: none; stroke: #246BCE; stroke-width: 4; marker-end: url(#arrow-data); }
+      .data-bi { fill: none; stroke: #246BCE; stroke-width: 4; marker-start: url(#arrow-data); marker-end: url(#arrow-data); }
+      .param { fill: none; stroke: #D66A1F; stroke-width: 4; marker-end: url(#arrow-param); }
+      .param-bi { fill: none; stroke: #D66A1F; stroke-width: 4; marker-start: url(#arrow-param); marker-end: url(#arrow-param); }
+      .control { fill: none; stroke: #667085; stroke-width: 3; stroke-dasharray: 10 8; marker-end: url(#arrow-control); }
+      .control-bi { fill: none; stroke: #667085; stroke-width: 3; stroke-dasharray: 10 8; marker-start: url(#arrow-control); marker-end: url(#arrow-control); }
+      .state { fill: none; stroke: #2D8A5B; stroke-width: 4; marker-end: url(#arrow-state); }
+      .state-bi { fill: none; stroke: #2D8A5B; stroke-width: 4; marker-start: url(#arrow-state); marker-end: url(#arrow-state); }
+      .label-bg { fill: #FFFFFF; opacity: 0.94; }
+    </style>
+  </defs>
+
+  <rect width="2200" height="1320" fill="#FFFFFF"/>
+  <text class="title" x="48" y="55">Zephyr sparse-v5 FPGA hardware module architecture</text>
+  <text class="subtitle" x="48" y="88">Production RTL hierarchy · 32 PE · PL LayerNorm · sparse parameter loading · 100 MHz</text>
+
+  <g transform="translate(1445,34)">
+    <path class="data" d="M0 10 H70"/>
+    <text class="legend" x="82" y="15">Feature / coefficient data</text>
+    <path class="param-bi" d="M0 42 H70"/>
+    <text class="legend" x="82" y="47">DDR parameter traffic</text>
+    <path class="control" d="M350 10 H420"/>
+    <text class="legend" x="432" y="15">Control / monitoring</text>
+    <path class="state" d="M350 42 H420"/>
+    <text class="legend" x="432" y="47">Recurrent state / active list</text>
+  </g>
+
+  <rect x="40" y="125" width="410" height="1160" rx="24" fill="#F4F7FB" stroke="#B5C0D0" stroke-width="2"/>
+  <text class="region-title" x="70" y="170">Computer / PYNQ processing system</text>
+
+  <rect x="490" y="125" width="1670" height="1160" rx="24" fill="#FAFCFF" stroke="#9EB3CE" stroke-width="3"/>
+  <text class="region-title" x="520" y="170">Programmable logic — accelerator_system_top</text>
+
+  <!-- Host and PS -->
+  <g filter="url(#shadow)">
+    <rect x="80" y="210" width="330" height="105" rx="14" fill="#E7F0FF" stroke="#7EA7E6" stroke-width="2"/>
+    <rect x="80" y="350" width="330" height="105" rx="14" fill="#EAF7F2" stroke="#79B99A" stroke-width="2"/>
+    <rect x="80" y="510" width="180" height="170" rx="14" fill="#FFF3E8" stroke="#E7A46B" stroke-width="2"/>
+    <rect x="290" y="500" width="120" height="82" rx="12" fill="#E7F0FF" stroke="#7EA7E6" stroke-width="2"/>
+    <rect x="290" y="620" width="120" height="82" rx="12" fill="#E7F0FF" stroke="#7EA7E6" stroke-width="2"/>
+    <rect x="290" y="1040" width="120" height="82" rx="12" fill="#E7F0FF" stroke="#7EA7E6" stroke-width="2"/>
+  </g>
+  <text class="node-title" x="245" y="246">PC feature / audio processing</text>
+  <text class="node-sub" x="245" y="274">STFT + magnitude before board execution</text>
+  <text class="node-sub" x="245" y="296">Dequantization + ISTFT after output</text>
+  <text class="node-title" x="245" y="388">Persistent PYNQ runtime</text>
+  <text class="node-sub" x="245" y="416">DMA descriptors · frame start · retirement</text>
+  <text class="node-title" x="170" y="554">DDR</text>
+  <text class="node-sub" x="170" y="583">Feature bundles</text>
+  <text class="node-sub" x="170" y="607">Model parameters</text>
+  <text class="node-sub" x="170" y="631">Enhanced output</text>
+  <text class="node-title" x="350" y="532">FB DMA</text>
+  <text class="node-sub" x="350" y="556">Magnitude</text>
+  <text class="node-title" x="350" y="651">Spectrum</text>
+  <text class="node-sub" x="350" y="676">DMA</text>
+  <text class="node-title" x="350" y="1072">Output</text>
+  <text class="node-sub" x="350" y="1097">DMA</text>
+
+  <!-- System-top modules -->
+  <g filter="url(#shadow)">
+    <rect x="550" y="205" width="280" height="105" rx="14" fill="#EDF2F8" stroke="#92A4BA" stroke-width="2"/>
+    <rect x="900" y="205" width="280" height="105" rx="14" fill="#EDF2F8" stroke="#92A4BA" stroke-width="2"/>
+    <rect x="1250" y="205" width="280" height="105" rx="14" fill="#FFF7E8" stroke="#DFB35E" stroke-width="2"/>
+    <rect x="1600" y="205" width="310" height="105" rx="14" fill="#F5F6F8" stroke="#AEB7C4" stroke-width="2" stroke-dasharray="8 6"/>
+  </g>
+  <text class="node-title" x="690" y="242">AXI-Lite control</text>
+  <text class="rtl-name" x="690" y="268">accelerator_control_axil</text>
+  <text class="node-sub" x="690" y="291">start · reset · sparse enable · status / IRQ</text>
+  <text class="node-title" x="1040" y="242">Profiling counters</text>
+  <text class="rtl-name" x="1040" y="268">accelerator_profiling_counters</text>
+  <text class="node-sub" x="1040" y="291">Disabled in headline 100-file run</text>
+  <text class="node-title" x="1390" y="242">Global model scheduler</text>
+  <text class="rtl-name" x="1390" y="268">fsm</text>
+  <text class="node-sub" x="1390" y="291">stage · fullband · subband · DeepFilter</text>
+  <text class="node-title" x="1755" y="242">CPU LayerNorm mailbox</text>
+  <text class="rtl-name" x="1755" y="268">layernorm_mailbox</text>
+  <text class="node-sub" x="1755" y="291">Instantiated fallback; inactive in PL mode</text>
+
+  <!-- PL LayerNorm -->
+  <rect x="550" y="390" width="350" height="350" rx="20" fill="#EFF8F2" stroke="#68A982" stroke-width="3"/>
+  <text class="region-title" x="575" y="428">PL LayerNorm coordinator</text>
+  <text class="rtl-name" x="725" y="454">realtime_layernorm_coordinator</text>
+  <g filter="url(#shadow)">
+    <rect x="580" y="480" width="290" height="70" rx="12" fill="#FFFFFF" stroke="#76B28D" stroke-width="2"/>
+    <rect x="580" y="600" width="180" height="95" rx="12" fill="#DDF2E5" stroke="#4F9B70" stroke-width="2"/>
+    <rect x="785" y="600" width="85" height="95" rx="12" fill="#FFF3E8" stroke="#E7A46B" stroke-width="2"/>
+  </g>
+  <text class="node-title" x="725" y="510">Frame buffers</text>
+  <text class="node-sub" x="725" y="535">Magnitude · fullband · subband</text>
+  <text class="node-title" x="670" y="631">LayerNorm Q12</text>
+  <text class="node-sub" x="670" y="656">mean · variance · inv-std</text>
+  <text class="node-sub" x="670" y="679">then gamma / beta affine</text>
+  <text class="node-title" x="827" y="631">ROM</text>
+  <text class="node-sub" x="827" y="657">gamma</text>
+  <text class="node-sub" x="827" y="677">beta</text>
+  <path class="data" d="M725 550 V600"/>
+  <path class="param" d="M785 647 H760"/>
+
+  <!-- Feature dispatcher -->
+  <g filter="url(#shadow)">
+    <rect x="960" y="495" width="250" height="150" rx="16" fill="#E7F0FF" stroke="#709ADB" stroke-width="2"/>
+  </g>
+  <text class="node-title" x="1085" y="535">Feature dispatcher</text>
+  <text class="rtl-name" x="1085" y="565">sequential_feature_dispatcher</text>
+  <text class="node-sub" x="1085" y="593">Fullband / subband buffers</text>
+  <text class="node-sub" x="1085" y="618">Tagged feature request / response</text>
+
+  <!-- PE and sparse-memory subsystem -->
+  <rect x="1260" y="370" width="540" height="630" rx="20" fill="#FFF9EE" stroke="#D6A34A" stroke-width="3"/>
+  <text class="region-title" x="1288" y="408">32-PE + sparse-memory subsystem</text>
+  <text class="rtl-name" x="1530" y="434">sequential_v5_pe_memory_subsystem</text>
+  <g filter="url(#shadow)">
+    <rect x="1290" y="465" width="210" height="105" rx="12" fill="#EAF7F2" stroke="#70AC89" stroke-width="2"/>
+    <rect x="1560" y="465" width="210" height="105" rx="12" fill="#EAF7F2" stroke="#70AC89" stroke-width="2"/>
+    <rect x="1290" y="650" width="210" height="115" rx="12" fill="#FFF1DC" stroke="#D99A41" stroke-width="2"/>
+    <rect x="1560" y="650" width="210" height="115" rx="12" fill="#FFF1DC" stroke="#D99A41" stroke-width="2"/>
+    <rect x="1340" y="850" width="380" height="110" rx="14" fill="#FDE8C9" stroke="#C98527" stroke-width="3"/>
+  </g>
+  <text class="node-title" x="1395" y="498">Recurrent context store</text>
+  <text class="node-sub" x="1395" y="526">State vectors + active-index lists</text>
+  <text class="rtl-name" x="1395" y="550">context_store_v5</text>
+  <text class="node-title" x="1665" y="498">Sparse union planner</text>
+  <text class="node-sub" x="1665" y="526">Union bitmap from active rows</text>
+  <text class="rtl-name" x="1665" y="550">sparse_union_planner_v5</text>
+  <text class="node-title" x="1395" y="685">PE job controller</text>
+  <text class="node-sub" x="1395" y="713">Stage / row-tile / gate scheduling</text>
+  <text class="rtl-name" x="1395" y="741">pe_job_controller_v5</text>
+  <text class="node-title" x="1665" y="685">Sparse memory service</text>
+  <text class="node-sub" x="1665" y="713">Selective row load + cache residency</text>
+  <text class="rtl-name" x="1665" y="741">memory_service_v5</text>
+  <text class="node-title" x="1530" y="888">32-lane PE datapath</text>
+  <text class="node-sub" x="1530" y="916">MAC · gate · sigmoid · membrane · requantization</text>
+  <text class="rtl-name" x="1530" y="942">pe_array_datapath_v5_32</text>
+
+  <!-- DeepFilter output path -->
+  <g filter="url(#shadow)">
+    <rect x="1870" y="480" width="240" height="165" rx="16" fill="#EAF0F8" stroke="#7E96B5" stroke-width="2"/>
+    <rect x="1870" y="770" width="240" height="105" rx="14" fill="#F1EAFE" stroke="#9A79CE" stroke-width="2"/>
+  </g>
+  <text class="node-title" x="1990" y="520">DeepFilter engine</text>
+  <text class="rtl-name" x="1990" y="550">sequential_deepfilter_engine</text>
+  <text class="node-sub" x="1990" y="578">Complex spectrum × coefficients</text>
+  <text class="node-sub" x="1990" y="604">History-aware frequency filtering</text>
+  <text class="node-title" x="1990" y="805">Coefficient store</text>
+  <text class="rtl-name" x="1990" y="832">sequential_df_coefficient_store</text>
+  <text class="node-sub" x="1990" y="855">Subband DeepFilter coefficients</text>
+
+  <!-- Host-local arrows -->
+  <path class="data" d="M220 315 V350"/>
+  <path class="data" d="M270 350 V315"/>
+  <path class="data" d="M220 455 V480 H155 V510"/>
+  <path class="data" d="M185 510 V495 H270 V455"/>
+  <path class="data" d="M260 545 H290"/>
+  <path class="data" d="M260 625 H275 V661 H290"/>
+
+  <!-- External data interfaces -->
+  <path class="data" d="M410 541 H550"/>
+  <rect class="label-bg" x="431" y="511" width="99" height="28" rx="5"/>
+  <text class="edge-label" x="480" y="531">S_AXIS_FB</text>
+  <path class="data" d="M410 661 H465 V1080 H1825 V590 H1870"/>
+  <rect class="label-bg" x="595" y="1058" width="204" height="28" rx="5"/>
+  <text class="edge-label" x="697" y="1078">S_AXIS_SPECTRUM · 64 bit</text>
+  <path class="data" d="M2110 555 H2140 V1160 H410 V1081"/>
+  <rect class="label-bg" x="920" y="1138" width="190" height="28" rx="5"/>
+  <text class="edge-label" x="1015" y="1158">M_AXIS_OUTPUT · 64 bit</text>
+  <path class="data" d="M290 1081 H240 V680"/>
+
+  <!-- Main feature and coefficient flow -->
+  <path class="data" d="M760 647 H900 V570 H960"/>
+  <rect class="label-bg" x="832" y="548" width="113" height="28" rx="5"/>
+  <text class="edge-label" x="888" y="568">normalized</text>
+  <path class="data-bi" d="M1210 570 H1240 V705 H1290"/>
+  <rect class="label-bg" x="1194" y="614" width="104" height="48" rx="5"/>
+  <text class="edge-label" x="1246" y="634">feature</text>
+  <text class="edge-label" x="1246" y="653">req / rsp</text>
+  <path class="data" d="M1395 765 V850"/>
+  <rect class="label-bg" x="1410" y="812" width="142" height="28" rx="5"/>
+  <text class="edge-label" x="1481" y="832">jobs + PE feed</text>
+  <path class="data" d="M1720 905 H1835 V822 H1870"/>
+  <rect class="label-bg" x="1742" y="875" width="142" height="28" rx="5"/>
+  <text class="edge-label" x="1813" y="895">SB coefficients</text>
+  <path class="data" d="M1990 770 V645"/>
+  <path class="data" d="M1340 905 H1170 V825 H920 V685 H900"/>
+  <rect class="label-bg" x="968" y="807" width="204" height="28" rx="5"/>
+  <text class="edge-label" x="1070" y="827">FB projection coefficients</text>
+
+  <!-- Sparse-memory internal flow -->
+  <path class="state" d="M1500 517 H1560"/>
+  <rect class="label-bg" x="1502" y="483" width="56" height="28" rx="5"/>
+  <text class="edge-label" x="1530" y="503">lists</text>
+  <path class="state-bi" d="M1395 570 V650"/>
+  <path class="state" d="M1665 570 V650"/>
+  <rect class="label-bg" x="1680" y="596" width="79" height="46" rx="5"/>
+  <text class="edge-label" x="1719" y="616">union</text>
+  <text class="edge-label" x="1719" y="635">plan</text>
+  <path class="param" d="M1560 707 H1500"/>
+  <path class="state" d="M1460 850 V805 H1330 V570"/>
+  <rect class="label-bg" x="1276" y="772" width="181" height="28" rx="5"/>
+  <text class="edge-label" x="1366" y="792">state + active indexes</text>
+
+  <!-- DDR parameter interface -->
+  <path class="param-bi" d="M260 590 H475 V1020 H1818 V707 H1770"/>
+  <rect class="label-bg" x="642" y="1002" width="282" height="28" rx="5"/>
+  <text class="edge-label" x="783" y="1022">M_AXI_PARAMETER / HP0 · 64 bit</text>
+
+  <!-- Control and monitoring -->
+  <path class="control" d="M410 402 H500 V258 H550"/>
+  <rect class="label-bg" x="427" y="347" width="129" height="28" rx="5"/>
+  <text class="edge-label" x="491" y="367">AXI-Lite GP0</text>
+  <path class="control-bi" d="M830 257 V330 H1250 V257"/>
+  <rect class="label-bg" x="939" y="315" width="202" height="28" rx="5"/>
+  <text class="edge-label" x="1040" y="335">start / done / status</text>
+  <path class="control" d="M1390 310 V350 H725 V390"/>
+  <path class="control" d="M1390 350 H1085 V495"/>
+  <path class="control" d="M1390 310 V370"/>
+  <path class="control" d="M1390 350 H1990 V480"/>
+  <rect class="label-bg" x="1474" y="334" width="188" height="28" rx="5"/>
+  <text class="edge-label" x="1568" y="354">stage / start control</text>
+  <path class="control" d="M1815 745 V372 H1040 V310"/>
+  <rect class="label-bg" x="1664" y="356" width="190" height="28" rx="5"/>
+  <text class="edge-label" x="1759" y="376">passive counter taps</text>
+
+  <line x1="80" y1="1200" x2="2120" y2="1200" stroke="#D6DCE6" stroke-width="2"/>
+  <text class="subtitle" x="80" y="1232">Source boundary: production RTL module instances. Bit-level nets, ready/valid wires, timeout logic and fault fan-in are intentionally collapsed.</text>
+  <text class="subtitle" x="80" y="1262">Current image: 0x00050002 · 32 PE · 100 MHz · PL dynamic LayerNorm · sparse row loading · 64-bit AXI HP boundary · 256-bit internal PE feed.</text>
+</svg>

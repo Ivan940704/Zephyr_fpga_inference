@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 2950 3970"
+     clip="0 2950 3970 0"
+     preserveAspectRatio="xMidYMid meet"
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     xml:space="preserve">
+<title>zephyr_full_wrapper</title>
+<desc>Nlview schematic (SVG)</desc>
+<clipPath id="clippingbbox">
+<rect x="0" y="0" width="3970" height="2950" />
+</clipPath>
+<g stroke="#19b400"
+   stroke-width="1"
+   stroke-linecap="butt"
+   stroke-linejoin="miter"
+   stroke-miterlimit="4"
+   stroke-dasharray="none"
+   stroke-dashoffset="0"
+   fill="none"
+   font-family="Helvetica"
+   font-style="normal"
+   font-size="12"
+   writing-mode="lr-tb"
+   cursor="crosshair"
+   transform="rotate(-90) translate(-3970)"
+   clip-path="url(#clippingbbox)">
+<path d="M0 0h3970v2951h-3970z" stroke="none" fill="white" />
+<path d="M18 24h3929l3 1l3 1l1 3l1 3v2880l-1 3l-1 3l-3 1l-3 1h-3929l-3 -1l-3 -1l-1 -3l-1 -3v-2880l1 -3l1 -3l3 -1z" stroke="none" fill="#fafafa" />
+<g stroke="black">
+<path d="M18 24h3929" />
+<path d="M3947,24 A7.83511,7.83511 1.61334 0,1 3955,32" />
+<path d="M3955 32v2880" />
+<path d="M3955,2912 A7.83511,7.83511 1.61334 0,1 3947,2920" />
+<path d="M3947 2920h-3929" />
+<path d="M18,2920 A7.83511,7.83511 1.61334 0,1 10,2912" />
+<path d="M10 2912v-2880" />
+<path d="M10,32 A7.83511,7.83511 1.61334 0,1 18,24" />
+<text x="1982" y="22" fill="black" stroke-width="0" text-anchor="middle">zephyr_full_i</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M15 35h12" />
+</g>
+<g stroke="black">
+<path d="M13 27h16v16h-16z" />
+<text x="1982" y="2922" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">zephyr_full</text>
+<path d="M28 64h3909l3 1l3 1l1 3l1 3v2810l-1 3l-1 3l-3 1l-3 1h-3909l-3 -1l-3 -1l-1 -3l-1 -3v-2810l1 -3l1 -3l3 -1z" stroke="none" fill="#fafafa" />
+<path d="M28 64h3909" />
+<path d="M3937,64 A7.83511,7.83511 1.61334 0,1 3945,72" />
+<path d="M3945 72v2810" />
+<path d="M3945,2882 A7.83511,7.83511 1.61334 0,1 3937,2890" />
+<path d="M3937 2890h-3909" />
+<path d="M28,2890 A7.83511,7.83511 1.61334 0,1 20,2882" />
+<path d="M20 2882v-2810" />
+<path d="M20,72 A7.83511,7.83511 1.61334 0,1 28,64" />
+<text x="1982" y="62" fill="black" stroke-width="0" text-anchor="middle">accel</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M25 75h12" />
+</g>
+<g stroke="black">
+<path d="M23 67h16v16h-16z" />
+<text x="1982" y="2892" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">zephyr_full_accel_0</text>
+<path d="M38 104h3889l3 1l3 1l1 3l1 3v2740l-1 3l-1 3l-3 1l-3 1h-3889l-3 -1l-3 -1l-1 -3l-1 -3v-2740l1 -3l1 -3l3 -1z" stroke="none" fill="#fafafa" />
+<path d="M38 104h3889" />
+<path d="M3927,104 A7.83511,7.83511 1.61334 0,1 3935,112" />
+<path d="M3935 112v2740" />
+<path d="M3935,2852 A7.83511,7.83511 1.61334 0,1 3927,2860" />
+<path d="M3927 2860h-3889" />
+<path d="M38,2860 A7.83511,7.83511 1.61334 0,1 30,2852" />
+<path d="M30 2852v-2740" />
+<path d="M30,112 A7.83511,7.83511 1.61334 0,1 38,104" />
+<text x="1982" y="102" fill="black" stroke-width="0" text-anchor="middle">inst</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M35 115h12" />
+</g>
+<g stroke="black">
+<path d="M33 107h16v16h-16z" />
+<text x="1982" y="2862" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">accelerator_system_top</text>
+<path d="M48 144h3869l3 1l3 1l1 3l1 3v2670l-1 3l-1 3l-3 1l-3 1h-3869l-3 -1l-3 -1l-1 -3l-1 -3v-2670l1 -3l1 -3l3 -1z" stroke="none" fill="#fafafa" />
+<path d="M48 144h3869" />
+<path d="M3917,144 A7.83511,7.83511 1.61334 0,1 3925,152" />
+<path d="M3925 152v2670" />
+<path d="M3925,2822 A7.83511,7.83511 1.61334 0,1 3917,2830" />
+<path d="M3917 2830h-3869" />
+<path d="M48,2830 A7.83511,7.83511 1.61334 0,1 40,2822" />
+<path d="M40 2822v-2670" />
+<path d="M40,152 A7.83511,7.83511 1.61334 0,1 48,144" />
+<text x="1982" y="142" fill="black" stroke-width="0" text-anchor="middle">u_accelerator</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M45 155h12" />
+</g>
+<g stroke="black">
+<path d="M43 147h16v16h-16z" />
+<text x="1982" y="2832" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">accelerator_top</text>
+<path d="M248 190h3374l3 1l3 1l1 3l1 3v2594l-1 3l-1 3l-3 1l-3 1h-3374l-3 -1l-3 -1l-1 -3l-1 -3v-2594l1 -3l1 -3l3 -1z" stroke="none" fill="#fafafa" />
+<path d="M248 190h3374" />
+<path d="M3622,190 A7.83511,7.83511 1.61334 0,1 3630,198" />
+<path d="M3630 198v2594" />
+<path d="M3630,2792 A7.83511,7.83511 1.61334 0,1 3622,2800" />
+<path d="M3622 2800h-3374" />
+<path d="M248,2800 A7.83511,7.83511 1.61334 0,1 240,2792" />
+<path d="M240 2792v-2594" />
+<path d="M240,198 A7.83511,7.83511 1.61334 0,1 248,190" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M245 201h12" />
+</g>
+<g stroke="black">
+<path d="M243 193h16v16h-16z" />
+<text x="1935" y="188" fill="black" stroke-width="0" text-anchor="middle">u_realtime_layernorm_coordinator</text>
+<text x="1935" y="2802" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">realtime_layernorm_coordinator</text>
+<path d="M3640 210h-10" />
+<text x="3632" y="208" fill="black" stroke-width="0" font-size="10">ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N</text>
+<path d="M3640 230h-10" />
+<text x="3632" y="228" fill="black" stroke-width="0" font-size="10">ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_0</text>
+<path d="M230 230h10" />
+<text x="238" y="228" fill="black" stroke-width="0" font-size="10" text-anchor="end">accelerator_aresetn</text>
+<path d="M230 250h10" />
+<text x="238" y="248" fill="black" stroke-width="0" font-size="10" text-anchor="end">aclk</text>
+<path d="M3640 290h-10" />
+<text x="3632" y="288" fill="black" stroke-width="0" font-size="10">adapter_error_valid</text>
+<path d="M3640 310h-10" />
+<text x="3632" y="308" fill="black" stroke-width="0" font-size="10">coefficient_fire</text>
+<path d="M3640 330h-10" />
+<text x="3632" y="328" fill="black" stroke-width="0" font-size="10">coordinator_quiescent</text>
+<path d="M3640 350h-10" />
+<text x="3632" y="348" fill="black" stroke-width="0" font-size="10">engine_error</text>
+<path d="M3640 370h-10" />
+<text x="3632" y="368" fill="black" stroke-width="0" font-size="10">engine_output_last</text>
+<path d="M230 270h10" />
+<text x="238" y="268" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[2]_0</text>
+<path d="M230 290h10" />
+<text x="238" y="288" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[3]_1</text>
+<path d="M230 310h10" />
+<text x="238" y="308" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail[7]_i_2__0</text>
+<path d="M230 330h10" />
+<text x="238" y="328" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[2]_0</text>
+<path d="M3640 390h-10" />
+<text x="3632" y="388" fill="black" stroke-width="0" font-size="10">error_reg</text>
+<path d="M3640 410h-10" />
+<text x="3632" y="408" fill="black" stroke-width="0" font-size="10">error_valid_reg_1</text>
+<path d="M230 370h10" />
+<text x="238" y="368" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_valid_reg_3</text>
+<path d="M230 390h10" />
+<text x="238" y="388" fill="black" stroke-width="0" font-size="10" text-anchor="end">fb_coefficient_valid0</text>
+<path d="M230 410h10" />
+<text x="238" y="408" fill="black" stroke-width="0" font-size="10" text-anchor="end">fb_projection_start</text>
+<path d="M3640 430h-10" />
+<text x="3632" y="428" fill="black" stroke-width="0" font-size="10">fullband_beat_q</text>
+<path d="M3640 450h-10" />
+<text x="3632" y="448" fill="black" stroke-width="0" font-size="10">fullband_beat_q_reg[0]_2</text>
+<path d="M230 430h10" />
+<text x="238" y="428" fill="black" stroke-width="0" font-size="10" text-anchor="end">fullband_beat_q_reg[0]_4</text>
+<path d="M230 470h10" />
+<text x="238" y="468" fill="black" stroke-width="0" font-size="10" text-anchor="end">length_q_reg[7]</text>
+<path d="M3640 1370h-10" />
+<text x="3632" y="1368" fill="black" stroke-width="0" font-size="10">magnitude_buffer_valid_q11_out</text>
+<path d="M3640 470h-10" />
+<text x="3632" y="468" fill="black" stroke-width="0" font-size="10">magnitude_buffer_valid_q_reg_0</text>
+<path d="M3640 1390h-10" />
+<text x="3632" y="1388" fill="black" stroke-width="0" font-size="10">magnitude_fire</text>
+<path d="M230 1750h10" />
+<text x="238" y="1748" fill="black" stroke-width="0" font-size="10" text-anchor="end">payload_base_q_reg[1]_0</text>
+<path d="M3640 1430h-10" />
+<text x="3632" y="1428" fill="black" stroke-width="0" font-size="10">profile_q_reg[1]_0</text>
+<path d="M230 1770h10" />
+<text x="238" y="1768" fill="black" stroke-width="0" font-size="10" text-anchor="end">profiling_enable</text>
+<path d="M230 1790h10" />
+<text x="238" y="1788" fill="black" stroke-width="0" font-size="10" text-anchor="end">profiling_frame_active</text>
+<path d="M3640 1450h-10" />
+<text x="3632" y="1448" fill="black" stroke-width="0" font-size="10">projection_count_q_reg[6]_0</text>
+<path d="M230 1810h10" />
+<text x="238" y="1808" fill="black" stroke-width="0" font-size="10" text-anchor="end">projection_count_q_reg[6]_2</text>
+<path d="M3640 1490h-10" />
+<text x="3632" y="1488" fill="black" stroke-width="0" font-size="10">reset_quiesce_q_reg</text>
+<path d="M230 1830h10" />
+<text x="238" y="1828" fill="black" stroke-width="0" font-size="10" text-anchor="end">reset_quiesce_request</text>
+<path d="M230 1870h10" />
+<text x="238" y="1868" fill="black" stroke-width="0" font-size="10" text-anchor="end">s_axis_fb_tlast</text>
+<path d="M230 1890h10" />
+<text x="238" y="1888" fill="black" stroke-width="0" font-size="10" text-anchor="end">s_axis_fb_tvalid</text>
+<path d="M3640 1510h-10" />
+<text x="3632" y="1508" fill="black" stroke-width="0" font-size="10">sb_error_pending_q_reg_0</text>
+<path d="M230 1950h10" />
+<text x="238" y="1948" fill="black" stroke-width="0" font-size="10" text-anchor="end">sb_rsp_data_q</text>
+<path d="M3640 1530h-10" />
+<text x="3632" y="1528" fill="black" stroke-width="0" font-size="10">sb_rsp_valid_q_reg_0</text>
+<path d="M3640 1550h-10" />
+<text x="3632" y="1548" fill="black" stroke-width="0" font-size="10">selected_sb_read_rsp_valid</text>
+<path d="M3640 1570h-10" />
+<text x="3632" y="1568" fill="black" stroke-width="0" font-size="10">sig_last_reg_out_reg</text>
+<path d="M3640 1590h-10" />
+<text x="3632" y="1588" fill="black" stroke-width="0" font-size="10">source_index_q</text>
+<path d="M3640 1770h-10" />
+<text x="3632" y="1768" fill="black" stroke-width="0" font-size="10">state_q139_out</text>
+<path d="M3640 1610h-10" />
+<text x="3632" y="1608" fill="black" stroke-width="0" font-size="10">state_q_reg[0]_0</text>
+<path d="M230 2190h10" />
+<text x="238" y="2188" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[0]_rep</text>
+<path d="M3640 1630h-10" />
+<text x="3632" y="1628" fill="black" stroke-width="0" font-size="10">state_q_reg[1]_0</text>
+<path d="M3640 1650h-10" />
+<text x="3632" y="1648" fill="black" stroke-width="0" font-size="10">state_q_reg[2]_0</text>
+<path d="M3640 1670h-10" />
+<text x="3632" y="1668" fill="black" stroke-width="0" font-size="10">state_q_reg[2]_1</text>
+<path d="M3640 1690h-10" />
+<text x="3632" y="1688" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_0</text>
+<path d="M3640 1710h-10" />
+<text x="3632" y="1708" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_1</text>
+<path d="M3640 1730h-10" />
+<text x="3632" y="1728" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_2</text>
+<path d="M3640 1750h-10" />
+<text x="3632" y="1748" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_3</text>
+<path d="M3640 1790h-10" />
+<text x="3632" y="1788" fill="black" stroke-width="0" font-size="10">subband_buffer_valid_q_reg_0</text>
+<path d="M230 2530h10" />
+<text x="238" y="2528" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_valid_q_reg_3</text>
+<path d="M3640 2070h-10" />
+<text x="3632" y="2068" fill="black" stroke-width="0" font-size="10">summary_work_q10_out</text>
+<path d="M230 2570h10" />
+<text x="238" y="2568" fill="black" stroke-width="0" font-size="10" text-anchor="end">system_abort</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M3640 250h-10" />
+<text x="3632" y="248" fill="black" stroke-width="0" font-size="10">E</text>
+<path d="M3640 270h-10" />
+<text x="3632" y="268" fill="black" stroke-width="0" font-size="10">Q[1:0]</text>
+<path d="M230 350h10" />
+<text x="238" y="348" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[15]_1</text>
+<path d="M230 450h10" />
+<text x="238" y="448" fill="black" stroke-width="0" font-size="10" text-anchor="end">length_q_reg[3]</text>
+<path d="M230 1250h10" />
+<text x="238" y="1248" fill="black" stroke-width="0" font-size="10" text-anchor="end">out[15:0]</text>
+<path d="M3640 1470h-10" />
+<text x="3632" y="1468" fill="black" stroke-width="0" font-size="10">projection_count_q_reg[6]_1[6:0]</text>
+<path d="M230 1850h10" />
+<text x="238" y="1848" fill="black" stroke-width="0" font-size="10" text-anchor="end">s_axis_fb_tkeep[7:0]</text>
+<path d="M230 2550h10" />
+<text x="238" y="2548" fill="black" stroke-width="0" font-size="10" text-anchor="end">subsystem_coefficient_index[8:0]</text>
+</g>
+<g stroke="black">
+<path d="M3620 210h10" />
+<path d="M3620 230h10" />
+<path d="M250 230h-10" />
+<path d="M250 250h-10" />
+<path d="M3620 290h10" />
+<path d="M3620 310h10" />
+<path d="M3620 330h10" />
+<path d="M3620 350h10" />
+<path d="M3620 370h10" />
+<path d="M250 270h-10" />
+<path d="M250 290h-10" />
+<path d="M250 310h-10" />
+<path d="M250 330h-10" />
+<path d="M3620 390h10" />
+<path d="M3620 410h10" />
+<path d="M250 370h-10" />
+<path d="M250 390h-10" />
+<path d="M250 410h-10" />
+<path d="M3620 430h10" />
+<path d="M3620 450h10" />
+<path d="M250 430h-10" />
+<path d="M250 470h-10" />
+<path d="M3620 1370h10" />
+<path d="M3620 470h10" />
+<path d="M3620 1390h10" />
+<path d="M250 1750h-10" />
+<path d="M3620 1430h10" />
+<path d="M250 1770h-10" />
+<path d="M250 1790h-10" />
+<path d="M3620 1450h10" />
+<path d="M250 1810h-10" />
+<path d="M3620 1490h10" />
+<path d="M250 1830h-10" />
+<path d="M250 1870h-10" />
+<path d="M250 1890h-10" />
+<path d="M3620 1510h10" />
+<path d="M250 1950h-10" />
+<path d="M3620 1530h10" />
+<path d="M3620 1550h10" />
+<path d="M3620 1570h10" />
+<path d="M3620 1590h10" />
+<path d="M3620 1770h10" />
+<path d="M3620 1610h10" />
+<path d="M250 2190h-10" />
+<path d="M3620 1630h10" />
+<path d="M3620 1650h10" />
+<path d="M3620 1670h10" />
+<path d="M3620 1690h10" />
+<path d="M3620 1710h10" />
+<path d="M3620 1730h10" />
+<path d="M3620 1750h10" />
+<path d="M3620 1790h10" />
+<path d="M250 2530h-10" />
+<path d="M3620 2070h10" />
+<path d="M250 2570h-10" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M3620 250h10" />
+<path d="M3620 270h10" />
+<path d="M250 350h-10" />
+<path d="M250 450h-10" />
+<path d="M250 1250h-10" />
+<path d="M3620 1470h10" />
+<path d="M250 1850h-10" />
+<path d="M250 2550h-10" />
+<path d="M2380 598h270v2042h-270z" stroke="none" fill="#dfebf8" />
+</g>
+<g stroke="black">
+<path d="M2380 598h270v2042h-270z" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M2391 603v12" />
+<path d="M2385 609h12" />
+</g>
+<g stroke="black">
+<path d="M2383 601h16v16h-16z" />
+<text x="2515" y="596" fill="black" stroke-width="0" text-anchor="middle">u_layernorm_engine</text>
+<text x="2515" y="2642" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">layernorm_engine_q12</text>
+<path d="M2660 1170h-10" />
+<text x="2652" y="1169" fill="black" stroke-width="0" font-size="10">ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N</text>
+<path d="M2660 1190h-10" />
+<text x="2652" y="1189" fill="black" stroke-width="0" font-size="10">ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_0</text>
+<path d="M2660 1230h-10" />
+<text x="2652" y="1229" fill="black" stroke-width="0" font-size="10">ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_2</text>
+<path d="M2370 650h10" />
+<text x="2378" y="649" fill="black" stroke-width="0" font-size="10" text-anchor="end">GEN_FOR_SYNC.s_ready_reg</text>
+<path d="M2370 670h10" />
+<text x="2378" y="669" fill="black" stroke-width="0" font-size="10" text-anchor="end">GEN_FOR_SYNC.s_ready_reg_0</text>
+<path d="M2660 1290h-10" />
+<text x="2652" y="1289" fill="black" stroke-width="0" font-size="10">abort0</text>
+<path d="M2370 710h10" />
+<text x="2378" y="709" fill="black" stroke-width="0" font-size="10" text-anchor="end">accelerator_aresetn</text>
+<path d="M2370 730h10" />
+<text x="2378" y="729" fill="black" stroke-width="0" font-size="10" text-anchor="end">aclk</text>
+<path d="M2370 750h10" />
+<text x="2378" y="749" fill="black" stroke-width="0" font-size="10" text-anchor="end">coordinator_magnitude_tready</text>
+<path d="M2660 1310h-10" />
+<text x="2652" y="1309" fill="black" stroke-width="0" font-size="10">coordinator_quiescent</text>
+<path d="M2370 770h10" />
+<text x="2378" y="769" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]_0</text>
+<path d="M2370 790h10" />
+<text x="2378" y="789" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]_1</text>
+<path d="M2370 810h10" />
+<text x="2378" y="809" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]_2</text>
+<path d="M2370 830h10" />
+<text x="2378" y="829" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]_3</text>
+<path d="M2370 850h10" />
+<text x="2378" y="849" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]_4</text>
+<path d="M2370 870h10" />
+<text x="2378" y="869" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]_5</text>
+<path d="M2370 890h10" />
+<text x="2378" y="889" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[1]_0</text>
+<path d="M2370 910h10" />
+<text x="2378" y="909" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[1]_1</text>
+<path d="M2370 930h10" />
+<text x="2378" y="929" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail[0]_i_4__0_0</text>
+<path d="M2370 950h10" />
+<text x="2378" y="949" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[0]</text>
+<path d="M2370 970h10" />
+<text x="2378" y="969" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[0]_0</text>
+<path d="M2370 1290h10" />
+<text x="2378" y="1289" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[15]_1</text>
+<path d="M2370 990h10" />
+<text x="2378" y="989" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[1]</text>
+<path d="M2370 1010h10" />
+<text x="2378" y="1009" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[2]</text>
+<path d="M2370 1030h10" />
+<text x="2378" y="1029" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[2]_0</text>
+<path d="M2370 1050h10" />
+<text x="2378" y="1049" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[3]</text>
+<path d="M2370 1070h10" />
+<text x="2378" y="1069" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[3]_0</text>
+<path d="M2370 1090h10" />
+<text x="2378" y="1089" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[4]</text>
+<path d="M2370 1110h10" />
+<text x="2378" y="1109" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[5]</text>
+<path d="M2370 1150h10" />
+<text x="2378" y="1149" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[6]_0</text>
+<path d="M2370 1170h10" />
+<text x="2378" y="1169" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[7]</text>
+<path d="M2370 1190h10" />
+<text x="2378" y="1189" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[8]</text>
+<path d="M2370 1210h10" />
+<text x="2378" y="1209" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[9]</text>
+<path d="M2660 1330h-10" />
+<text x="2652" y="1329" fill="black" stroke-width="0" font-size="10">error_reg_0</text>
+<path d="M2660 1350h-10" />
+<text x="2652" y="1349" fill="black" stroke-width="0" font-size="10">error_reg_1</text>
+<path d="M2660 1370h-10" />
+<text x="2652" y="1369" fill="black" stroke-width="0" font-size="10">error_valid_reg</text>
+<path d="M2660 1390h-10" />
+<text x="2652" y="1389" fill="black" stroke-width="0" font-size="10">error_valid_reg_0</text>
+<path d="M2370 1310h10" />
+<text x="2378" y="1309" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_valid_reg_1</text>
+<path d="M2370 1330h10" />
+<text x="2378" y="1329" fill="black" stroke-width="0" font-size="10" text-anchor="end">fb_coefficient_valid0</text>
+<path d="M2370 1350h10" />
+<text x="2378" y="1349" fill="black" stroke-width="0" font-size="10" text-anchor="end">fb_projection_start</text>
+<path d="M2660 1410h-10" />
+<text x="2652" y="1409" fill="black" stroke-width="0" font-size="10">fullband_beat_q</text>
+<path d="M2370 1370h10" />
+<text x="2378" y="1369" fill="black" stroke-width="0" font-size="10" text-anchor="end">fullband_beat_q_reg[0]</text>
+<path d="M2660 1430h-10" />
+<text x="2652" y="1429" fill="black" stroke-width="0" font-size="10">fullband_buffer</text>
+<path d="M2370 1430h10" />
+<text x="2378" y="1429" fill="black" stroke-width="0" font-size="10" text-anchor="end">length_q_reg[7]_0</text>
+<path d="M2370 1450h10" />
+<text x="2378" y="1449" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_beat_q_reg[0]</text>
+<path d="M2660 1450h-10" />
+<text x="2652" y="1449" fill="black" stroke-width="0" font-size="10">magnitude_buffer_valid_q11_out</text>
+<path d="M2370 1470h10" />
+<text x="2378" y="1469" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_buffer_valid_q_reg</text>
+<path d="M2370 1490h10" />
+<text x="2378" y="1489" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_buffer_valid_q_reg_0</text>
+<path d="M2370 1510h10" />
+<text x="2378" y="1509" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_buffer_valid_q_reg_1</text>
+<path d="M2370 1530h10" />
+<text x="2378" y="1529" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_frame_q_reg[0]</text>
+<path d="M2370 1550h10" />
+<text x="2378" y="1549" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_frame_q_reg[0]_0</text>
+<path d="M2370 1570h10" />
+<text x="2378" y="1569" fill="black" stroke-width="0" font-size="10" text-anchor="end">magnitude_frame_q_reg[0]_1</text>
+<path d="M2660 1510h-10" />
+<text x="2652" y="1509" fill="black" stroke-width="0" font-size="10">output_last_q_reg_0</text>
+<path d="M2660 1530h-10" />
+<text x="2652" y="1529" fill="black" stroke-width="0" font-size="10">p_0_in</text>
+<path d="M2370 1610h10" />
+<text x="2378" y="1609" fill="black" stroke-width="0" font-size="10" text-anchor="end">p_0_in29_in</text>
+<path d="M2660 1550h-10" />
+<text x="2652" y="1549" fill="black" stroke-width="0" font-size="10">p_0_in2_in</text>
+<path d="M2370 1630h10" />
+<text x="2378" y="1629" fill="black" stroke-width="0" font-size="10" text-anchor="end">p_0_in30_in</text>
+<path d="M2660 1610h-10" />
+<text x="2652" y="1609" fill="black" stroke-width="0" font-size="10">p_15_in</text>
+<path d="M2660 1570h-10" />
+<text x="2652" y="1569" fill="black" stroke-width="0" font-size="10">p_1_in</text>
+<path d="M2370 1650h10" />
+<text x="2378" y="1649" fill="black" stroke-width="0" font-size="10" text-anchor="end">parameter_request_fire</text>
+<path d="M2370 1670h10" />
+<text x="2378" y="1669" fill="black" stroke-width="0" font-size="10" text-anchor="end">payload_base_q_reg[1]</text>
+<path d="M2370 1690h10" />
+<text x="2378" y="1689" fill="black" stroke-width="0" font-size="10" text-anchor="end">payload_base_q_reg[1]_0</text>
+<path d="M2660 1670h-10" />
+<text x="2652" y="1669" fill="black" stroke-width="0" font-size="10">profile_q_reg[1]</text>
+<path d="M2660 1690h-10" />
+<text x="2652" y="1689" fill="black" stroke-width="0" font-size="10">profile_q_reg[1]_0</text>
+<path d="M2660 1710h-10" />
+<text x="2652" y="1709" fill="black" stroke-width="0" font-size="10">profile_q_reg[1]_1</text>
+<path d="M2370 1710h10" />
+<text x="2378" y="1709" fill="black" stroke-width="0" font-size="10" text-anchor="end">profiling_enable</text>
+<path d="M2370 1730h10" />
+<text x="2378" y="1729" fill="black" stroke-width="0" font-size="10" text-anchor="end">profiling_frame_active</text>
+<path d="M2370 1750h10" />
+<text x="2378" y="1749" fill="black" stroke-width="0" font-size="10" text-anchor="end">projection_count_q_reg[6]</text>
+<path d="M2370 1770h10" />
+<text x="2378" y="1769" fill="black" stroke-width="0" font-size="10" text-anchor="end">projection_count_q_reg[6]_0</text>
+<path d="M2370 1790h10" />
+<text x="2378" y="1789" fill="black" stroke-width="0" font-size="10" text-anchor="end">projection_count_q_reg[6]_1</text>
+<path d="M2370 1810h10" />
+<text x="2378" y="1809" fill="black" stroke-width="0" font-size="10" text-anchor="end">projection_count_q_reg[6]_2</text>
+<path d="M2660 1730h-10" />
+<text x="2652" y="1729" fill="black" stroke-width="0" font-size="10">reset_quiesce_q_reg</text>
+<path d="M2370 1830h10" />
+<text x="2378" y="1829" fill="black" stroke-width="0" font-size="10" text-anchor="end">reset_quiesce_request</text>
+<path d="M2370 1850h10" />
+<text x="2378" y="1849" fill="black" stroke-width="0" font-size="10" text-anchor="end">s_axis_fb_tlast</text>
+<path d="M2370 1870h10" />
+<text x="2378" y="1869" fill="black" stroke-width="0" font-size="10" text-anchor="end">s_axis_fb_tvalid</text>
+<path d="M2660 1750h-10" />
+<text x="2652" y="1749" fill="black" stroke-width="0" font-size="10">sb_error_pending_q_reg</text>
+<path d="M2660 1770h-10" />
+<text x="2652" y="1769" fill="black" stroke-width="0" font-size="10">sb_error_pending_q_reg_0</text>
+<path d="M2370 1910h10" />
+<text x="2378" y="1909" fill="black" stroke-width="0" font-size="10" text-anchor="end">sb_error_pending_q_reg_2</text>
+<path d="M2370 1930h10" />
+<text x="2378" y="1929" fill="black" stroke-width="0" font-size="10" text-anchor="end">sb_error_pending_q_reg_3</text>
+<path d="M2370 1950h10" />
+<text x="2378" y="1949" fill="black" stroke-width="0" font-size="10" text-anchor="end">sb_rsp_data_q</text>
+<path d="M2660 1830h-10" />
+<text x="2652" y="1829" fill="black" stroke-width="0" font-size="10">sb_rsp_valid_q_reg_0</text>
+<path d="M2660 1850h-10" />
+<text x="2652" y="1849" fill="black" stroke-width="0" font-size="10">sig_last_reg_out_reg</text>
+<path d="M2370 1970h10" />
+<text x="2378" y="1969" fill="black" stroke-width="0" font-size="10" text-anchor="end">soft_reset_safe_sample_q_i_2</text>
+<path d="M2370 1990h10" />
+<text x="2378" y="1989" fill="black" stroke-width="0" font-size="10" text-anchor="end">source_index_q_reg_rep[2]</text>
+<path d="M2370 2030h10" />
+<text x="2378" y="2029" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[1]_i_2__2_0</text>
+<path d="M2370 2050h10" />
+<text x="2378" y="2049" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[1]_i_2__2_1</text>
+<path d="M2370 2150h10" />
+<text x="2378" y="2149" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_11__1_0</text>
+<path d="M2370 2170h10" />
+<text x="2378" y="2169" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_12__1_0</text>
+<path d="M2370 2070h10" />
+<text x="2378" y="2069" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_2__2_0</text>
+<path d="M2370 2090h10" />
+<text x="2378" y="2089" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_2__2_1</text>
+<path d="M2370 2110h10" />
+<text x="2378" y="2109" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_4__2_0</text>
+<path d="M2370 2130h10" />
+<text x="2378" y="2129" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_4__2_1</text>
+<path d="M2660 1890h-10" />
+<text x="2652" y="1889" fill="black" stroke-width="0" font-size="10">state_q_reg[0]_0</text>
+<path d="M2370 2210h10" />
+<text x="2378" y="2209" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[0]_1</text>
+<path d="M2370 2230h10" />
+<text x="2378" y="2229" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[0]_2</text>
+<path d="M2370 2250h10" />
+<text x="2378" y="2249" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[0]_3</text>
+<path d="M2370 2190h10" />
+<text x="2378" y="2189" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[0]_rep_0</text>
+<path d="M2660 1910h-10" />
+<text x="2652" y="1909" fill="black" stroke-width="0" font-size="10">state_q_reg[2]_0</text>
+<path d="M2660 1930h-10" />
+<text x="2652" y="1929" fill="black" stroke-width="0" font-size="10">state_q_reg[2]_1</text>
+<path d="M2370 2270h10" />
+<text x="2378" y="2269" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[2]_3</text>
+<path d="M2370 2290h10" />
+<text x="2378" y="2289" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[2]_4</text>
+<path d="M2370 2310h10" />
+<text x="2378" y="2309" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[2]_5</text>
+<path d="M2660 1970h-10" />
+<text x="2652" y="1969" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_0</text>
+<path d="M2660 1990h-10" />
+<text x="2652" y="1989" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_1</text>
+<path d="M2660 2010h-10" />
+<text x="2652" y="2009" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_2</text>
+<path d="M2660 2050h-10" />
+<text x="2652" y="2049" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_4</text>
+<path d="M2370 2330h10" />
+<text x="2378" y="2329" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[3]_5</text>
+<path d="M2370 2350h10" />
+<text x="2378" y="2349" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[3]_6</text>
+<path d="M2370 2370h10" />
+<text x="2378" y="2369" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q_reg[3]_7</text>
+<path d="M2370 2390h10" />
+<text x="2378" y="2389" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_reg</text>
+<path d="M2370 2410h10" />
+<text x="2378" y="2409" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_reg_0</text>
+<path d="M2370 2430h10" />
+<text x="2378" y="2429" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_reg_1</text>
+<path d="M2370 2450h10" />
+<text x="2378" y="2449" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_reg_2</text>
+<path d="M2370 2490h10" />
+<text x="2378" y="2489" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_reg_4</text>
+<path d="M2370 2510h10" />
+<text x="2378" y="2509" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_valid_q_reg</text>
+<path d="M2370 2530h10" />
+<text x="2378" y="2529" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_valid_q_reg_0</text>
+<path d="M2370 2550h10" />
+<text x="2378" y="2549" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_valid_q_reg_1</text>
+<path d="M2370 2570h10" />
+<text x="2378" y="2569" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_frame_q_reg[0]</text>
+<path d="M2370 2610h10" />
+<text x="2378" y="2609" fill="black" stroke-width="0" font-size="10" text-anchor="end">sum_negative_q_reg_0</text>
+<path d="M2660 2070h-10" />
+<text x="2652" y="2069" fill="black" stroke-width="0" font-size="10">summary_work_q10_out</text>
+<path d="M2370 2630h10" />
+<text x="2378" y="2629" fill="black" stroke-width="0" font-size="10" text-anchor="end">system_abort</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M2660 1210h-10" />
+<text x="2652" y="1209" fill="black" stroke-width="0" font-size="10">ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_1</text>
+<path d="M2370 630h10" />
+<text x="2378" y="629" fill="black" stroke-width="0" font-size="10" text-anchor="end">CO</text>
+<path d="M2660 1250h-10" />
+<text x="2652" y="1249" fill="black" stroke-width="0" font-size="10">D[1:0]</text>
+<path d="M2660 1270h-10" />
+<text x="2652" y="1269" fill="black" stroke-width="0" font-size="10">E</text>
+<path d="M2370 690h10" />
+<text x="2378" y="689" fill="black" stroke-width="0" font-size="10" text-anchor="end">Q[1:0]</text>
+<path d="M2370 1230h10" />
+<text x="2378" y="1229" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[13][5:0]</text>
+<path d="M2370 1250h10" />
+<text x="2378" y="1249" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[15]</text>
+<path d="M2370 1270h10" />
+<text x="2378" y="1269" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[15]_0[15:0]</text>
+<path d="M2370 1130h10" />
+<text x="2378" y="1129" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[6][6:0]</text>
+<path d="M2370 1390h10" />
+<text x="2378" y="1389" fill="black" stroke-width="0" font-size="10" text-anchor="end">index[7:0]</text>
+<path d="M2370 1410h10" />
+<text x="2378" y="1409" fill="black" stroke-width="0" font-size="10" text-anchor="end">length_q_reg[3]_0</text>
+<path d="M2370 1590h10" />
+<text x="2378" y="1589" fill="black" stroke-width="0" font-size="10" text-anchor="end">out[11:0]</text>
+<path d="M2660 1470h-10" />
+<text x="2652" y="1469" fill="black" stroke-width="0" font-size="10">output_data_q_reg[7]_0[7:0]</text>
+<path d="M2660 1490h-10" />
+<text x="2652" y="1489" fill="black" stroke-width="0" font-size="10">output_index_q_reg[5]_0[4:0]</text>
+<path d="M2660 1590h-10" />
+<text x="2652" y="1589" fill="black" stroke-width="0" font-size="10">p_1_in2_in[9:0]</text>
+<path d="M2660 1630h-10" />
+<text x="2652" y="1629" fill="black" stroke-width="0" font-size="10">pl_frame_id_q_reg[15][15:0]</text>
+<path d="M2660 1650h-10" />
+<text x="2652" y="1649" fill="black" stroke-width="0" font-size="10">profile_q_reg[0]</text>
+<path d="M2370 1890h10" />
+<text x="2378" y="1889" fill="black" stroke-width="0" font-size="10" text-anchor="end">sample_read_q_reg[47]_0[26:0]</text>
+<path d="M2660 1790h-10" />
+<text x="2652" y="1789" fill="black" stroke-width="0" font-size="10">sb_error_pending_q_reg_1</text>
+<path d="M2660 1810h-10" />
+<text x="2652" y="1809" fill="black" stroke-width="0" font-size="10">sb_rsp_valid_q_reg</text>
+<path d="M2660 1870h-10" />
+<text x="2652" y="1869" fill="black" stroke-width="0" font-size="10">sig_last_reg_out_reg_0</text>
+<path d="M2370 2010h10" />
+<text x="2378" y="2009" fill="black" stroke-width="0" font-size="10" text-anchor="end">source_value_q[15:0]</text>
+<path d="M2660 1950h-10" />
+<text x="2652" y="1949" fill="black" stroke-width="0" font-size="10">state_q_reg[2]_2</text>
+<path d="M2660 2030h-10" />
+<text x="2652" y="2029" fill="black" stroke-width="0" font-size="10">state_q_reg[3]_3</text>
+<path d="M2370 2470h10" />
+<text x="2378" y="2469" fill="black" stroke-width="0" font-size="10" text-anchor="end">subband_buffer_reg_3[7:0]</text>
+<path d="M2370 2590h10" />
+<text x="2378" y="2589" fill="black" stroke-width="0" font-size="10" text-anchor="end">subsystem_coefficient_index[5:0]</text>
+</g>
+<g stroke="black">
+<path d="M2640 1170h10" />
+<path d="M2640 1190h10" />
+<path d="M2640 1230h10" />
+<path d="M2390 650h-10" />
+<path d="M2390 670h-10" />
+<path d="M2640 1290h10" />
+<path d="M2390 710h-10" />
+<path d="M2390 730h-10" />
+<path d="M2390 750h-10" />
+<path d="M2640 1310h10" />
+<path d="M2390 770h-10" />
+<path d="M2390 790h-10" />
+<path d="M2390 810h-10" />
+<path d="M2390 830h-10" />
+<path d="M2390 850h-10" />
+<path d="M2390 870h-10" />
+<path d="M2390 890h-10" />
+<path d="M2390 910h-10" />
+<path d="M2390 930h-10" />
+<path d="M2390 950h-10" />
+<path d="M2390 970h-10" />
+<path d="M2390 1290h-10" />
+<path d="M2390 990h-10" />
+<path d="M2390 1010h-10" />
+<path d="M2390 1030h-10" />
+<path d="M2390 1050h-10" />
+<path d="M2390 1070h-10" />
+<path d="M2390 1090h-10" />
+<path d="M2390 1110h-10" />
+<path d="M2390 1150h-10" />
+<path d="M2390 1170h-10" />
+<path d="M2390 1190h-10" />
+<path d="M2390 1210h-10" />
+<path d="M2640 1330h10" />
+<path d="M2640 1350h10" />
+<path d="M2640 1370h10" />
+<path d="M2640 1390h10" />
+<path d="M2390 1310h-10" />
+<path d="M2390 1330h-10" />
+<path d="M2390 1350h-10" />
+<path d="M2640 1410h10" />
+<path d="M2390 1370h-10" />
+<path d="M2640 1430h10" />
+<path d="M2390 1430h-10" />
+<path d="M2390 1450h-10" />
+<path d="M2640 1450h10" />
+<path d="M2390 1470h-10" />
+<path d="M2390 1490h-10" />
+<path d="M2390 1510h-10" />
+<path d="M2390 1530h-10" />
+<path d="M2390 1550h-10" />
+<path d="M2390 1570h-10" />
+<path d="M2640 1510h10" />
+<path d="M2640 1530h10" />
+<path d="M2390 1610h-10" />
+<path d="M2640 1550h10" />
+<path d="M2390 1630h-10" />
+<path d="M2640 1610h10" />
+<path d="M2640 1570h10" />
+<path d="M2390 1650h-10" />
+<path d="M2390 1670h-10" />
+<path d="M2390 1690h-10" />
+<path d="M2640 1670h10" />
+<path d="M2640 1690h10" />
+<path d="M2640 1710h10" />
+<path d="M2390 1710h-10" />
+<path d="M2390 1730h-10" />
+<path d="M2390 1750h-10" />
+<path d="M2390 1770h-10" />
+<path d="M2390 1790h-10" />
+<path d="M2390 1810h-10" />
+<path d="M2640 1730h10" />
+<path d="M2390 1830h-10" />
+<path d="M2390 1850h-10" />
+<path d="M2390 1870h-10" />
+<path d="M2640 1750h10" />
+<path d="M2640 1770h10" />
+<path d="M2390 1910h-10" />
+<path d="M2390 1930h-10" />
+<path d="M2390 1950h-10" />
+<path d="M2640 1830h10" />
+<path d="M2640 1850h10" />
+<path d="M2390 1970h-10" />
+<path d="M2390 1990h-10" />
+<path d="M2390 2030h-10" />
+<path d="M2390 2050h-10" />
+<path d="M2390 2150h-10" />
+<path d="M2390 2170h-10" />
+<path d="M2390 2070h-10" />
+<path d="M2390 2090h-10" />
+<path d="M2390 2110h-10" />
+<path d="M2390 2130h-10" />
+<path d="M2640 1890h10" />
+<path d="M2390 2210h-10" />
+<path d="M2390 2230h-10" />
+<path d="M2390 2250h-10" />
+<path d="M2390 2190h-10" />
+<path d="M2640 1910h10" />
+<path d="M2640 1930h10" />
+<path d="M2390 2270h-10" />
+<path d="M2390 2290h-10" />
+<path d="M2390 2310h-10" />
+<path d="M2640 1970h10" />
+<path d="M2640 1990h10" />
+<path d="M2640 2010h10" />
+<path d="M2640 2050h10" />
+<path d="M2390 2330h-10" />
+<path d="M2390 2350h-10" />
+<path d="M2390 2370h-10" />
+<path d="M2390 2390h-10" />
+<path d="M2390 2410h-10" />
+<path d="M2390 2430h-10" />
+<path d="M2390 2450h-10" />
+<path d="M2390 2490h-10" />
+<path d="M2390 2510h-10" />
+<path d="M2390 2530h-10" />
+<path d="M2390 2550h-10" />
+<path d="M2390 2570h-10" />
+<path d="M2390 2610h-10" />
+<path d="M2640 2070h10" />
+<path d="M2390 2630h-10" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M2640 1210h10" />
+<path d="M2390 630h-10" />
+<path d="M2640 1250h10" />
+<path d="M2640 1270h10" />
+<path d="M2390 690h-10" />
+<path d="M2390 1230h-10" />
+<path d="M2390 1250h-10" />
+<path d="M2390 1270h-10" />
+<path d="M2390 1130h-10" />
+<path d="M2390 1390h-10" />
+<path d="M2390 1410h-10" />
+<path d="M2390 1590h-10" />
+<path d="M2640 1470h10" />
+<path d="M2640 1490h10" />
+<path d="M2640 1590h10" />
+<path d="M2640 1630h10" />
+<path d="M2640 1650h10" />
+<path d="M2390 1890h-10" />
+<path d="M2640 1790h10" />
+<path d="M2640 1810h10" />
+<path d="M2640 1870h10" />
+<path d="M2390 2010h-10" />
+<path d="M2640 1950h10" />
+<path d="M2640 2030h10" />
+<path d="M2390 2470h-10" />
+<path d="M2390 2590h-10" />
+<path d="M1010 778h100v762h-100z" stroke="none" fill="#dfebf8" />
+</g>
+<g stroke="black">
+<path d="M1010 778h100v762h-100z" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M1021 783v12" />
+<path d="M1015 789h12" />
+</g>
+<g stroke="black">
+<path d="M1013 781h16v16h-16z" />
+<text x="1060" y="776" fill="black" stroke-width="0" text-anchor="middle">u_parameter_rom</text>
+<text x="1060" y="1542" fill="black" stroke-width="0" text-anchor="middle" dy="7.7">layernorm_parameter_rom_q12</text>
+<path d="M1000 830h10" />
+<text x="1008" y="829" fill="black" stroke-width="0" font-size="10" text-anchor="end">abort0</text>
+<path d="M1000 850h10" />
+<text x="1008" y="849" fill="black" stroke-width="0" font-size="10" text-anchor="end">accelerator_aresetn</text>
+<path d="M1000 870h10" />
+<text x="1008" y="869" fill="black" stroke-width="0" font-size="10" text-anchor="end">aclk</text>
+<path d="M1120 990h-10" />
+<text x="1112" y="989" fill="black" stroke-width="0" font-size="10">element_index_q_reg[0]_rep</text>
+<path d="M1120 1010h-10" />
+<text x="1112" y="1009" fill="black" stroke-width="0" font-size="10">element_index_q_reg[1]</text>
+<path d="M1120 1030h-10" />
+<text x="1112" y="1029" fill="black" stroke-width="0" font-size="10">element_index_q_reg[2]</text>
+<path d="M1120 1050h-10" />
+<text x="1112" y="1049" fill="black" stroke-width="0" font-size="10">element_index_q_reg[4]</text>
+<path d="M1120 1070h-10" />
+<text x="1112" y="1069" fill="black" stroke-width="0" font-size="10">element_index_q_reg[5]</text>
+<path d="M1120 1090h-10" />
+<text x="1112" y="1089" fill="black" stroke-width="0" font-size="10">element_index_q_reg[6]</text>
+<path d="M1000 890h10" />
+<text x="1008" y="889" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[0]</text>
+<path d="M1000 910h10" />
+<text x="1008" y="909" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[2]</text>
+<path d="M1000 930h10" />
+<text x="1008" y="929" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[2]_0</text>
+<path d="M1000 950h10" />
+<text x="1008" y="949" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[2]_1</text>
+<path d="M1000 970h10" />
+<text x="1008" y="969" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[3]</text>
+<path d="M1000 990h10" />
+<text x="1008" y="989" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[3]_0</text>
+<path d="M1000 1010h10" />
+<text x="1008" y="1009" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[3]_1</text>
+<path d="M1000 1030h10" />
+<text x="1008" y="1029" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_code_reg[3]_2</text>
+<path d="M1000 1050h10" />
+<text x="1008" y="1049" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail[7]_i_2__0_0</text>
+<path d="M1000 1070h10" />
+<text x="1008" y="1069" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail[7]_i_2__0_1</text>
+<path d="M1000 1090h10" />
+<text x="1008" y="1089" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail[7]_i_2__0_2</text>
+<path d="M1000 1130h10" />
+<text x="1008" y="1129" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[0]</text>
+<path d="M1000 1150h10" />
+<text x="1008" y="1149" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[7]</text>
+<path d="M1000 1170h10" />
+<text x="1008" y="1169" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[7]_0</text>
+<path d="M1000 1190h10" />
+<text x="1008" y="1189" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail_reg[7]_1</text>
+<path d="M1000 1210h10" />
+<text x="1008" y="1209" fill="black" stroke-width="0" font-size="10" text-anchor="end">fb_projection_start</text>
+<path d="M1120 1110h-10" />
+<text x="1112" y="1109" fill="black" stroke-width="0" font-size="10">p_0_in29_in</text>
+<path d="M1120 1130h-10" />
+<text x="1112" y="1129" fill="black" stroke-width="0" font-size="10">p_0_in30_in</text>
+<path d="M1120 1150h-10" />
+<text x="1112" y="1149" fill="black" stroke-width="0" font-size="10">parameter_request_fire</text>
+<path d="M1120 1170h-10" />
+<text x="1112" y="1169" fill="black" stroke-width="0" font-size="10">pl_frame_id_q_reg[7]</text>
+<path d="M1120 1190h-10" />
+<text x="1112" y="1189" fill="black" stroke-width="0" font-size="10">pl_frame_id_q_reg[8]</text>
+<path d="M1120 1210h-10" />
+<text x="1112" y="1209" fill="black" stroke-width="0" font-size="10">pl_frame_id_q_reg[9]</text>
+<path d="M1000 1270h10" />
+<text x="1008" y="1269" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_bias_q_reg[0]_0</text>
+<path d="M1000 1290h10" />
+<text x="1008" y="1289" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_bias_q_reg[0]_1</text>
+<path d="M1000 1310h10" />
+<text x="1008" y="1309" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_bias_q_reg[0]_2</text>
+<path d="M1120 1250h-10" />
+<text x="1112" y="1249" fill="black" stroke-width="0" font-size="10">response_error_q_reg_0</text>
+<path d="M1120 1270h-10" />
+<text x="1112" y="1269" fill="black" stroke-width="0" font-size="10">response_error_q_reg_1</text>
+<path d="M1120 1290h-10" />
+<text x="1112" y="1289" fill="black" stroke-width="0" font-size="10">response_valid_q_reg_0</text>
+<path d="M1120 1310h-10" />
+<text x="1112" y="1309" fill="black" stroke-width="0" font-size="10">response_valid_q_reg_1</text>
+<path d="M1000 1330h10" />
+<text x="1008" y="1329" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_valid_q_reg_2</text>
+<path d="M1000 1350h10" />
+<text x="1008" y="1349" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_weight_q_reg[5]_0</text>
+<path d="M1000 1370h10" />
+<text x="1008" y="1369" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_weight_q_reg[6]_0</text>
+<path d="M1000 1430h10" />
+<text x="1008" y="1429" fill="black" stroke-width="0" font-size="10" text-anchor="end">source_value_q_reg[0]</text>
+<path d="M1000 1450h10" />
+<text x="1008" y="1449" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[0]_i_2__2</text>
+<path d="M1000 1470h10" />
+<text x="1008" y="1469" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_12__1</text>
+<path d="M1000 1490h10" />
+<text x="1008" y="1489" fill="black" stroke-width="0" font-size="10" text-anchor="end">state_q[3]_i_12__1_0</text>
+<path d="M1120 1350h-10" />
+<text x="1112" y="1349" fill="black" stroke-width="0" font-size="10">state_q_reg[0]</text>
+<path d="M1120 1370h-10" />
+<text x="1112" y="1369" fill="black" stroke-width="0" font-size="10">state_q_reg[2]</text>
+<path d="M1120 1390h-10" />
+<text x="1112" y="1389" fill="black" stroke-width="0" font-size="10">state_q_reg[3]</text>
+<path d="M1000 1530h10" />
+<text x="1008" y="1529" fill="black" stroke-width="0" font-size="10" text-anchor="end">system_abort</text>
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M1120 950h-10" />
+<text x="1112" y="949" fill="black" stroke-width="0" font-size="10">D[1:0]</text>
+<path d="M1120 970h-10" />
+<text x="1112" y="969" fill="black" stroke-width="0" font-size="10">E</text>
+<path d="M1000 810h10" />
+<text x="1008" y="809" fill="black" stroke-width="0" font-size="10" text-anchor="end">Q[1:0]</text>
+<path d="M1000 1110h10" />
+<text x="1008" y="1109" fill="black" stroke-width="0" font-size="10" text-anchor="end">error_detail[8]_i_2__0_0</text>
+<path d="M1000 1230h10" />
+<text x="1008" y="1229" fill="black" stroke-width="0" font-size="10" text-anchor="end">index[7:0]</text>
+<path d="M1000 1250h10" />
+<text x="1008" y="1249" fill="black" stroke-width="0" font-size="10" text-anchor="end">out[2:0]</text>
+<path d="M1120 1230h-10" />
+<text x="1112" y="1229" fill="black" stroke-width="0" font-size="10">response_bias_q_reg[15]_0[12:0]</text>
+<path d="M1000 1390h10" />
+<text x="1008" y="1389" fill="black" stroke-width="0" font-size="10" text-anchor="end">response_weight_q_reg[12]_0[1:0]</text>
+<path d="M1120 1330h-10" />
+<text x="1112" y="1329" fill="black" stroke-width="0" font-size="10">response_weight_q_reg[13]_0[13:0]</text>
+<path d="M1000 1410h10" />
+<text x="1008" y="1409" fill="black" stroke-width="0" font-size="10" text-anchor="end">s_axis_fb_tkeep[6:0]</text>
+<path d="M1000 1510h10" />
+<text x="1008" y="1509" fill="black" stroke-width="0" font-size="10" text-anchor="end">subsystem_coefficient_index[2:0]</text>
+</g>
+<g stroke="black">
+<path d="M1020 830h-10" />
+<path d="M1020 850h-10" />
+<path d="M1020 870h-10" />
+<path d="M1100 990h10" />
+<path d="M1100 1010h10" />
+<path d="M1100 1030h10" />
+<path d="M1100 1050h10" />
+<path d="M1100 1070h10" />
+<path d="M1100 1090h10" />
+<path d="M1020 890h-10" />
+<path d="M1020 910h-10" />
+<path d="M1020 930h-10" />
+<path d="M1020 950h-10" />
+<path d="M1020 970h-10" />
+<path d="M1020 990h-10" />
+<path d="M1020 1010h-10" />
+<path d="M1020 1030h-10" />
+<path d="M1020 1050h-10" />
+<path d="M1020 1070h-10" />
+<path d="M1020 1090h-10" />
+<path d="M1020 1130h-10" />
+<path d="M1020 1150h-10" />
+<path d="M1020 1170h-10" />
+<path d="M1020 1190h-10" />
+<path d="M1020 1210h-10" />
+<path d="M1100 1110h10" />
+<path d="M1100 1130h10" />
+<path d="M1100 1150h10" />
+<path d="M1100 1170h10" />
+<path d="M1100 1190h10" />
+<path d="M1100 1210h10" />
+<path d="M1020 1270h-10" />
+<path d="M1020 1290h-10" />
+<path d="M1020 1310h-10" />
+<path d="M1100 1250h10" />
+<path d="M1100 1270h10" />
+<path d="M1100 1290h10" />
+<path d="M1100 1310h10" />
+<path d="M1020 1330h-10" />
+<path d="M1020 1350h-10" />
+<path d="M1020 1370h-10" />
+<path d="M1020 1430h-10" />
+<path d="M1020 1450h-10" />
+<path d="M1020 1470h-10" />
+<path d="M1020 1490h-10" />
+<path d="M1100 1350h10" />
+<path d="M1100 1370h10" />
+<path d="M1100 1390h10" />
+<path d="M1020 1530h-10" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M1100 950h10" />
+<path d="M1100 970h10" />
+<path d="M1020 810h-10" />
+<path d="M1020 1110h-10" />
+<path d="M1020 1230h-10" />
+<path d="M1020 1250h-10" />
+<path d="M1100 1230h10" />
+<path d="M1020 1390h-10" />
+<path d="M1100 1330h10" />
+<path d="M1020 1410h-10" />
+<path d="M1020 1510h-10" />
+</g>
+<g stroke="green" stroke-width="3" stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M270 1247v363h1450v-23" />
+<path d="M1720 1590h650" />
+<path d="M250 1250h20" />
+<path d="M270 1250h730" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M1719 1585v10l11 -5" stroke="none" fill="black" />
+<path d="M269 1245v10l11 -5" stroke="none" fill="black" />
+</g>
+<g stroke="green" stroke-width="3" stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1390h-470v-720h1550" />
+<path d="M2077 667h7v7h-7z" stroke="none" fill="green" />
+<path d="M2370 690h-290v-420h1540" />
+<path d="M1000 810h-330v-280h1210v700h490" />
+<path d="M250 1850h40v-440h710" />
+<path d="M2370 1130h-230v-660h900v1000h580" />
+</g>
+<g stroke="green" stroke-width="3">
+<path d="M310 1507v1083h1490" />
+<path d="M1800 2590h570" />
+<path d="M310 1510h690" />
+<path d="M250 2550h60" />
+<path d="M307 2547h7v7h-7z" stroke="none" fill="green" />
+<path d="M1800 2587v6" />
+</g>
+<g stroke="black" stroke-width="3">
+<path d="M1799 2585v10l11 -5" stroke="none" fill="black" />
+<path d="M309 1505v10l11 -5" stroke="none" fill="black" />
+</g>
+<g stroke="green" stroke-width="3" stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1230h-230v340h730v-180h870" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2370 1910h-250v780h1260v-2480h240" />
+</g>
+<g>
+<path d="M2660 1170h400v-940h560" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2660 1810h600v-1560h360" />
+<path d="M1000 830h-310v-280h910v-160h1420v900h-360" />
+<path d="M250 230h160v620h590" />
+<path d="M410 270h1650v440h310" />
+<path d="M408 268h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M250 250h120v620h630" />
+<path d="M370 290h1250v440h750" />
+<path d="M368 288h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M1000 1330h-210v260h910" />
+<path d="M1698 1588h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M2370 2610h-670v-2320h1920" />
+<path d="M2370 770h-250v-460h1500" />
+</g>
+<g>
+<path d="M2660 1310h480v-980h480" />
+<path d="M2660 1330h500v-980h460" />
+<path d="M2660 1510h540v-1140h420" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1170h-290v-480h1190v200h470" />
+<path d="M1000 970h-410v-380h1410v280h370" />
+<path d="M1000 1010h-390v-400h1370v200h390" />
+</g>
+<g>
+<path d="M250 270h80v660h670" />
+<path d="M250 290h40v700h710" />
+<path d="M290 310h1730v980h350" />
+<path d="M288 308h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M250 310h20v760h730" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M250 330h1190v700h930" />
+<path d="M250 350h140v760h610" />
+<path d="M390 350h1090v900h890" />
+<path d="M388 348h5v5h-5z" stroke="none" fill="#19b400" />
+</g>
+<g>
+<path d="M2660 1350h520v-960h440" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 910h-490v-420h950v-160h1660v80h500" />
+</g>
+<g>
+<path d="M250 370h1690v940h430" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M250 390h1310v940h810" />
+<path d="M250 410h100v800h650" />
+<path d="M350 410h1190v940h830" />
+<path d="M348 408h5v5h-5z" stroke="none" fill="#19b400" />
+</g>
+<g>
+<path d="M2660 1410h560v-980h400" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1490h-570v-980h1090v-160h1580v100h520" />
+</g>
+<g>
+<path d="M250 430h60v1040h690" />
+<path d="M310 430h1190v940h870" />
+<path d="M308 428h5v5h-5z" stroke="none" fill="#19b400" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M250 450h1110v960h1010" />
+<path d="M250 470h1530v960h590" />
+<path d="M2370 1470h-270v-1100h980v100h540" />
+</g>
+<g>
+<path d="M2660 1450h620v-80h340" />
+<path d="M2660 1390h960" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1190h-290v440h830v-60h830" />
+</g>
+<g>
+<path d="M1120 1110h620v500h630" />
+<path d="M1120 1130h480v500h770" />
+<path d="M1120 1150h400v500h850" />
+<path d="M250 1750h1730v-80h390" />
+<path d="M2660 1710h680v-280h280" />
+<path d="M250 1770h1750v-60h370" />
+<path d="M250 1790h1770v-60h350" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2370 1750h-270v920h1360v-1220h160" />
+</g>
+<g>
+<path d="M250 1810h2120" />
+<path d="M2660 1730h760v-240h200" />
+<path d="M250 1830h2120" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M250 1870h1790v-20h330" />
+</g>
+<g>
+<path d="M250 1890h1830v-20h290" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2370 1930h-230v780h1380v-1200h100" />
+<path d="M250 1950h2120" />
+</g>
+<g>
+<path d="M2660 1830h780v-300h180" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2370 2510h-210v220h1400v-1180h60" />
+</g>
+<g>
+<path d="M2660 1850h820v-280h140" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2660 1670h500v-80h460" />
+</g>
+<g>
+<path d="M250 2190h2120" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1290h-270v-560h850" />
+<path d="M1578 728h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M2370 2390h-790v-1900h1820v1120h220" />
+<path d="M1000 1270h-250v-520h1170" />
+<path d="M1918 748h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M2370 2410h-450v-1900h1440v1120h260" />
+</g>
+<g>
+<path d="M2660 1930h840v-280h120" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1050h-350v-400h1390" />
+<path d="M2038 648h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M2370 1770h-330v-1240h1280v1140h300" />
+<path d="M1000 1310h-270v360h1230" />
+<path d="M1958 1668h5v5h-5z" stroke="none" fill="#19b400" />
+<path d="M2370 2430h-410v-1880h1340v1140h320" />
+</g>
+<g>
+<path d="M2660 1970h880v-260h80" />
+<path d="M2660 1990h920v-260h40" />
+<path d="M2660 2010h940v-260h20" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 890h-510v760h910v620h970" />
+</g>
+<g>
+<path d="M2660 1770h960" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M2370 670h-210v-100h1080v1220h380" />
+<path d="M250 2530h2120" />
+</g>
+<g>
+<path d="M2660 2070h960" />
+</g>
+<g stroke-dasharray="7,3" stroke-dashoffset="3">
+<path d="M1000 1530h-670v1100h2040" />
+<path d="M250 2570h80" />
+<path d="M328 2568h5v5h-5z" stroke="none" fill="#19b400" />
+</g>
+<g>
+<path d="M1000 1430h-450v-720h1130v-260h1320v920h-340" />
+<path d="M1000 1450h-250v240h630v1060h1620v-1060h-340" />
+<path d="M1000 950h-430v-380h1070v-160h1340v780h-320" />
+<path d="M1000 1150h-530v580h870v1060h1620v-740h-300" />
+<path d="M1000 1030h-370v-400h1030v-200h1300v800h-300" />
+<path d="M1000 1130h-550v580h910v1060h1620v-880h-320" />
+<path d="M1120 1370h340v760h910" />
+<path d="M1120 1290h360v700h890" />
+<path d="M1120 1390h300v860h950" />
+<path d="M1120 1250h320v1080h930" />
+<path d="M1120 1170h1250" />
+<path d="M1120 1270h700v-200h550" />
+<path d="M1120 1190h1250" />
+<path d="M1120 1210h1250" />
+<path d="M1120 990h220v-40h1030" />
+<path d="M1120 1010h280v-20h970" />
+<path d="M1120 1030h300v-20h950" />
+<path d="M1120 1050h740v40h510" />
+<path d="M1120 1070h680v40h570" />
+<path d="M1120 1090h720v60h530" />
+<path d="M1120 1350h340v-560h910" />
+<path d="M1120 1310h640v-380h610" />
+<text x="276" y="1249" fill="black" stroke-width="0" font-size="8">9:7</text>
+<text x="1726" y="1589" fill="black" stroke-width="0" font-size="8">...</text>
+<text x="316" y="1509" fill="black" stroke-width="0" font-size="8">2:0</text>
+<text x="1806" y="2589" fill="black" stroke-width="0" font-size="8">8:3</text>
+</g>
+</g>
+</svg>

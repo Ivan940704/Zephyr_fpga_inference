@@ -1,0 +1,5 @@
+create_clock -name clk -period 10.000 [get_ports clk]
+set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports clk]
+set_input_delay 0.250 -clock clk [get_ports -filter {DIRECTION == IN && NAME != clk}]
+set_output_delay 0.250 -clock clk [all_outputs]
+set_clock_uncertainty 0.250 [get_clocks clk]

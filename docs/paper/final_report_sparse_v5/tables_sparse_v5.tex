@@ -1,0 +1,105 @@
+% Sparse-v5 paper tables generated from the frozen evidence summaries in this
+% directory.  Requires \usepackage{booktabs}.  SI-SDR must not be renamed
+% SI-SNR.  Energy is a Vivado vectorless on-chip estimate, not rail power.
+
+\begin{table}[t]
+  \centering
+  \caption{Post-route implementation results for sparse-v5 on the PYNQ-Z1
+  (XC7Z020-1). Guardbanded timing applies 0.25-ns setup and 0.05-ns hold
+  margins.}
+  \label{tab:sparse-v5-implementation}
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    Metric & Sparse-v5 \\
+    \midrule
+    Processing elements & 32 \\
+    Clock frequency & 100 MHz \\
+    AXI HP / internal feed width & 64 / 256 bit \\
+    Slice LUTs & 42,773 / 53,200 (80.40\%) \\
+    Slice registers & 45,344 / 106,400 (42.62\%) \\
+    BRAM36 / BRAM18 & 76 / 7 \\
+    BRAM36 equivalents & 79.5 / 140 (56.79\%) \\
+    DSP48E1 & 68 / 220 (30.91\%) \\
+    Occupied slices & 13,013 / 13,300 (97.84\%) \\
+    WNS at 100 MHz & +0.251 ns \\
+    Guardbanded WNS / WHS & +0.001 / +0.002 ns \\
+    Raw hold margin & +0.052 ns \\
+    Estimated on-chip power & 1.609 W \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table*}[t]
+  \centering
+  \caption{Sparse-v5 100-file board results. START-to-output and complete
+  iteration latency were measured across 426,196 frames with profiling and
+  counter snapshots disabled. Energy combines the measured latency with a
+  medium-confidence vectorless post-route on-chip power estimate.}
+  \label{tab:sparse-v5-system-results}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Category & Metric & Result \\
+    \midrule
+    Latency & Mean START-to-output & 5.3943 ms/frame \\
+    Latency & Mean complete iteration & 5.8076 ms/frame \\
+    Latency & START-to-output p50 / p95 / p99 & 5.3616 / 6.0678 / 6.2897 ms \\
+    Latency & Complete iteration p50 / p95 / p99 & 5.7752 / 6.4863 / 6.7180 ms \\
+    Latency & START-to-output / iteration maximum & 12.8465 / 13.4523 ms \\
+    Throughput & Sustained board-loop RTF & 0.728054 \\
+    Throughput & Setup-amortized board RTF & 0.732000 \\
+    Throughput & Full serialized PYNQ-script RTF & 0.927193 \\
+    Quality & Enhanced SI-SDR / improvement & 14.5120 / +7.4313 dB \\
+    Quality & Enhanced SNR & 14.7579 dB \\
+    Correctness & Bit-exact enhanced WAVs vs. image-v5 & 100 / 100 \\
+    Energy & START-to-output / complete iteration & 8.679 / 9.344 mJ/frame \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \centering
+  \caption{Comparison between the dense image-v5 baseline and sparse-v5.
+  Negative values in the change column indicate reductions. Quality is
+  unchanged because all 100 enhanced WAV files were bit-exact.}
+  \label{tab:sparse-v5-comparison}
+  \begin{tabular}{@{}lrrr@{}}
+    \toprule
+    Metric & Image-v5 & Sparse-v5 & Change \\
+    \midrule
+    Mean START-to-output (ms) & 6.6671 & 5.3943 & -19.09\% \\
+    Mean complete iteration (ms) & 7.0766 & 5.8076 & -17.93\% \\
+    START-to-output p99 (ms) & 7.1957 & 6.2897 & -12.59\% \\
+    Sustained board-loop RTF & 0.886679 & 0.728054 & -17.89\% \\
+    Slice LUTs & 45,188 & 42,773 & -5.34\% \\
+    Slice registers & 42,151 & 45,344 & +7.58\% \\
+    DSP48E1 & 65 & 68 & +4.62\% \\
+    BRAM36 equivalents & 79.5 & 79.5 & 0.00\% \\
+    Complete-iteration energy (mJ/frame) & 11.645 & 9.344 & -19.75\% \\
+    Enhanced SI-SDR (dB) & 14.5120 & 14.5120 & 0.0000 dB \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+% Separate diagnostic run; do not merge its sampled counter statistics with
+% the profiling-off 100-file headline latency distribution.
+\begin{table}[t]
+  \centering
+  \caption{Sparse-memory diagnostic profile on files 000, 025, 050, 075, and
+  099, sampling hardware counters once every 16 frames.}
+  \label{tab:sparse-v5-diagnostics}
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    Metric & Result \\
+    \midrule
+    Sampled frames & 1,453 / 23,137 \\
+    Counter snapshot reduction & 93.72\% \\
+    Dense-equivalent bytes/frame & 1,053,656 \\
+    Actual parameter bytes/frame & 479,740.6 \\
+    Parameter-byte savings & 54.47\% \\
+    Sparse-stage load latency & 1.7835 ms/sampled frame \\
+    AXI read-wait latency & 0.8428 ms/sampled frame \\
+    Request sparsity / MAC skip & 88.22\% / 88.22\% \\
+    PL latency mean / min / max & 5.1907 / 4.4427 / 6.0967 ms \\
+    \bottomrule
+  \end{tabular}
+\end{table}

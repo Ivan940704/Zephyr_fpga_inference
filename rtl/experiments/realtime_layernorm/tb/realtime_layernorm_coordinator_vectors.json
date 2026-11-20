@@ -1,0 +1,43 @@
+{
+  "fixture_note": "Saved projection is injected independently; when rescaling is enabled, this is a connected arithmetic fixture, not an end-to-end model frame.",
+  "fixture_rescale_magnitude_max": 7.5,
+  "frame_count": 3,
+  "records": [
+    {
+      "fixture_magnitude_scale": 0.7139952537226519,
+      "fullband_int8_sha256": "56928c75c4cbed00ffdc05c1a9bfa09c008580de61e6f5d9454aa59844e062d6",
+      "magnitude_q12_max": 30720,
+      "magnitude_q12_min": 0,
+      "original_magnitude_max": 10.504271507263184,
+      "projection_int8_sha256": "a5700e9a29326342388c86a534c8f04a8ffb8f80b7f75eb6c45c4a6f5d24ba72",
+      "saved_frame_index": 0,
+      "subband_int8_sha256": "fcd90978bee20717c4fcdc3044d5e439296f9bc0dd76a5ad330772edfe3db8f7"
+    },
+    {
+      "fixture_magnitude_scale": 0.2931655031606086,
+      "fullband_int8_sha256": "abf140226b5b1ba62549b81f266b746bc5c7953571776462ec9ea2647338162b",
+      "magnitude_q12_max": 30720,
+      "magnitude_q12_min": 0,
+      "original_magnitude_max": 25.58281898498535,
+      "projection_int8_sha256": "7199c7005504ccb8254e506d1ee1c23fde99f424fde19fb5773d10bb3cc95663",
+      "saved_frame_index": 16,
+      "subband_int8_sha256": "0a921181e73b748ee70fbc0ae2d42d386396f292c33e5167f7921f7b2a3a9377"
+    },
+    {
+      "fixture_magnitude_scale": 0.4615228601797565,
+      "fullband_int8_sha256": "4b82d9b435af6f11c6a1cbc9d0164cf7950c6f85e3ea5b8e433bb32d511437d8",
+      "magnitude_q12_max": 30720,
+      "magnitude_q12_min": 0,
+      "original_magnitude_max": 16.25054931640625,
+      "projection_int8_sha256": "58e4566e6d2b29b076a76dc35b63aa8fbdc028f7b94353f7298ef33d71bd933e",
+      "saved_frame_index": 32,
+      "subband_int8_sha256": "eb62fa0397590216f221084e768bc07378f674fe40c0fc49d68bdef0002360a1"
+    }
+  ],
+  "runtime_parameters": "runtime_parameters.npz generated from frozen manifest",
+  "runtime_parameters_sha256": "68424c2a3c29e226e0af9e23ee658d77259cfc521a2c7db8374da2ded71d5474",
+  "schema": "zephyr.realtime-feature-coordinator-vectors.v1",
+  "source_result": "rtl/reports/accelerator_full_board/inference_result.npz",
+  "source_result_sha256": "a079ef32eae31f0700c94316e382ff88d1f208151952956ac29c72b0df13f4f6",
+  "vector_file_sha256": "7d5ac64f9162693f206f61d01db94b8a84771ad0ddcdef180b9140e7665d4962"
+}

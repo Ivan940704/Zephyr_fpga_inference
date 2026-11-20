@@ -1,0 +1,26 @@
+# Codex/local workspace metadata
+/.agents/
+/.codex/
+/team_workspace/host_setup/host-setup-report.json
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Vivado/XSim transient products.  Curated evidence under rtl/test-results and
+# rtl/pe_array/reports remains tracked.
+/rtl/build/
+/rtl/.Xil/
+**/.Xil/
+*.jou
+*.str
+*.pb
+*.wdb
+*.vcd
+
+# Editor and operating-system noise
+.DS_Store
+Thumbs.db
+*.swp
+*~

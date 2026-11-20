@@ -1,0 +1,34 @@
+# Task: Verify standalone RTL leaf modules
+
+- Owner: Codex
+- Status: complete
+- Branch: codex/rtl-leaf-unit-tests (requested; outer `.git` metadata is read-only in this session)
+- Scope:
+  - Implement standalone Verilog leaf modules for integer arithmetic, spike indexing,
+    DeepFilter arithmetic, serialization, and local weight buffering.
+  - Treat LayerNorm, STFT, subband preprocessing, and ISTFT as PC-side functions.
+  - Add a self-checking testbench for every implemented leaf module.
+- Files expected to change:
+  - `rtl/leaf/*.v`
+  - `rtl/tb/*.v`
+  - `rtl/Makefile`
+  - `rtl/README.md`
+  - `team_workspace/handoffs/2026-08-31-rtl-leaf-unit-tests.md`
+- Out of scope:
+  - `top.v`, `fsm.v`, `pe_array.v`, and `memory.v` integration.
+  - AXI/DMA integration, LayerNorm RTL, synthesis, implementation, and bitstream generation.
+  - Any changes inside the dirty `upstream/` nested repository.
+- Acceptance checks:
+  - [x] Every leaf module has a self-checking testbench.
+  - [x] Arithmetic rounding and saturation match the integer reference contract.
+  - [x] Sparse index generation handles zero, dense, sparse, and stalled outputs.
+  - [x] Ping-pong buffer isolates load and compute banks and swaps only on command.
+  - [x] DeepFilter complex MAC passes order 1, 3, and 5 vectors.
+  - [x] Test results and limitations are recorded in a handoff note.
+- Notes:
+  - Default PE lane count for packed memory words is 16, but leaf modules remain parameterized.
+  - Existing unrelated modifications in `upstream/` must remain untouched.
+  - Python reference-vector and testbench-coverage checks pass 7/7.
+  - Windows interop was enabled through a user-approved sandbox escalation.
+  - Vivado 2018.3 standalone XSim regression passes 11/11 testbenches.
+  - Final XSim summary is stored in `rtl/test-results/xsim-console.log`.

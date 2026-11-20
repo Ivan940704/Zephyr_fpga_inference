@@ -1,0 +1,11 @@
+build/
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.dcp
+*.wdb
+*.vcd
+reports/raw/
+
